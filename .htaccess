@@ -1,0 +1,7 @@
+RewriteEngine On
+Options +FollowSymLinks
+RewriteCond %{HTTP_HOST} ^gamers-city.eu$
+RewriteRule ^(.*) http://www.gamers-city.eu/$1  [QSA,L,R=301]
+RewriteRule ^live-ben$   index.php?p=live&stream=benzaie [QSA,L]
+RewriteRule ^live-benzaie$   index.php?p=live&stream=benzaie [QSA,L]
+RewriteRule ^live-([\w+\s-]+)$   index.php?p=live&stream=$1 [QSA,L]

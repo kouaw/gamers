@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<title>AdminPlus - Premium Bootstrap Admin Template (v3.0)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<!-- Bootstrap -->
+	<link href="../common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Bootstrap Extended -->
+	<link href="../common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="../common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../common/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+	
+	<!-- Select2 -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/forms/select2/select2.css"/>
+	
+	<!-- Notyfy -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.css"/>
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/notifications/notyfy/themes/default.css"/>
+	
+	<!-- Gritter Notifications Plugin -->
+	<link href="../common/theme/scripts/plugins/notifications/Gritter/css/jquery.gritter.css" rel="stylesheet" />
+	
+	<!-- JQueryUI v1.9.2 -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/system/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+	
+		
+	<!-- glyphicons -->
+	<link rel="stylesheet" href="../common/theme/css/glyphicons.css" />
+	
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="../common/theme/css/font-awesome/css/font-awesome.min.css" />
+	
+	
+	<!-- Bootstrap Extended -->
+	<link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-select/bootstrap-select.css" />
+	<!-- <link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" /> -->
+	<link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-switch/static/stylesheets/bootstrap-switch.css" />
+	
+	<!-- Uniform -->
+	<link rel="stylesheet" media="screen" href="../common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" />
+	
+	<!-- google-code-prettify -->
+	<link href="../common/theme/scripts/plugins/other/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+
+	<!-- JQuery v1.8.2 -->
+	<script src="../common/theme/scripts/plugins/system/jquery-1.8.2.min.js"></script>
+	
+	<!-- Modernizr -->
+	<script src="../common/theme/scripts/plugins/system/modernizr.custom.76094.js"></script>
+	
+	<!-- MiniColors -->
+	<link rel="stylesheet" media="screen" href="../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" />
+	
+	<!-- Theme -->
+	<link rel="stylesheet" href="../common/theme/css/style.css?1382104445" />
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36057737-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	
+	<!-- LESS 2 CSS -->
+	<script src="../common/theme/scripts/plugins/system/less-1.3.3.min.js"></script>
+	
+</head>
+<body>
+	
+	<!-- Start Content -->
+	<div class="first-container container fluid">
+		
+		<div class="navbar main hidden-print">
+			
+						
+			<a href="php/index.html?lang=en" class="appbrand"><span>Admin+ <span>lovely headline here</span></span></a>
+			
+						<!-- Menu Toggle Button -->
+				<button type="button" class="btn btn-navbar">
+                	<span class="glyphicons show_lines toggle"></span>
+				</button>
+			<!-- // Menu Toggle Button END -->
+                        
+			
+						<ul class="topnav pull-right">
+				<li class="visible-lg">
+					<ul class="notif">
+						<li><a href="" class="glyphicons envelope" data-toggle="tooltip" data-placement="bottom" data-original-title="5 new messages"> 5</a></li>
+						<li><a href="" class="glyphicons shopping_cart" data-toggle="tooltip" data-placement="bottom" data-original-title="1 new orders"> 1</a></li>
+						<li><a href="" class="glyphicons log_book" data-toggle="tooltip" data-placement="bottom" data-original-title="3 new activities"> 3</a></li>
+					</ul>
+				</li>
+				<li class="dropdown visible-lg">
+					<a href="" data-toggle="dropdown" class="glyphicons cogwheel">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="">Some option</a></li>
+						<li><a href="">Some other option</a></li>
+						<li><a href="">Other option</a></li>
+					</ul>
+				</li>
+								<li class="hidden-xs"><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper"><span>Themer</span></a></li>
+								<li class="hidden-sm hidden-xs">
+					<a href="#" data-toggle="dropdown"><img src="../common/theme/images/lang/en.png" alt="en" /></a>
+			    	<ul class="dropdown-menu pull-right">
+			      		<li class="active"><a href="?page=widgets&amp;lang=en" title="English"><img src="../common/theme/images/lang/en.png" alt="English"> English</a></li>
+			      		<li><a href="?page=widgets&amp;lang=ro" title="Romanian"><img src="../common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+			      		<li><a href="?page=widgets&amp;lang=it" title="Italian"><img src="../common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+			      		<li><a href="?page=widgets&amp;lang=fr" title="French"><img src="../common/theme/images/lang/fr.png" alt="French"> French</a></li>
+			      		<li><a href="?page=widgets&amp;lang=pl" title="Polish"><img src="../common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+			    	</ul>
+				</li>
+				<li class="account">
+										<a data-toggle="dropdown" href="my_account.html?lang=en" class="glyphicons logout lock"><span class="hidden-sm text">mosaicpro</span></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="my-accoutn.html?lang=en" class="glyphicons cogwheel">Settings</a></li>
+						<li><a href="my_account.html?lang=en" class="glyphicons camera">My Photos</a></li>
+						<li class="highlight profile">
+							<span>
+								<span class="heading">Profile <a href="my_account.html?lang=en" class="pull-right">edit</a></span>
+								<span class="img"></span>
+								<span class="details">
+									<a href="my_account.html?lang=en">Mosaic Pro</a>
+									contact@mosaicpro.biz
+								</span>
+								<span class="clearfix"></span>
+							</span>
+						</li>
+						<li>
+							<span>
+								<a class="btn btn-default btn-small pull-right" style="padding: 2px 10px; background: #fff;" href="login.html?lang=en">Sign Out</a>
+							</span>
+						</li>
+					</ul>
+									</li>
+			</ul>
+									
+		</div>
+		
+						<div id="wrapper">
+		<div id="menu" class="hidden-sm hidden-print">
+			<div id="menuInner">
+			
+				<!-- Scrollable menu wrapper with Maximum height -->
+				<div class="slim-scroll" data-scroll-height="420px">
+				
+				<div id="search">
+					<input type="text" placeholder="Quick search ..." />
+					<button class="glyphicons search"></button>
+				</div>
+				<ul>
+					<li class="heading"><span>Category</span></li>
+					<li class="glyphicons home"><a href="index.html?lang=en"><span>Dashboard</span></a></li>
+					<li class="hasSubmenu active">
+						<a data-toggle="collapse" class="glyphicons settings" href="#menu_components"><span>Components</span></a>
+						<ul class="menuCollapse in" id="menu_components">
+							<li class=""><a href="ui.html?lang=en"><span>UI Elements</span></a></li>
+							<li class=""><a href="tabs.html?lang=en"><span>Tabs</span></a></li>
+							<li class=""><a href="tables.html?lang=en"><span>Tables</span></a></li>
+							<li class=""><a href="charts.html?lang=en"><span>Charts</span></a></li>
+							<li class=" active"><a href="widgets.html?lang=en"><span>Widgets</span></a></li>
+							<li class=""><a href="grid.html?lang=en"><span>Grid</span></a></li>
+							<li class=""><a href="icons.html?lang=en"><span>Icons</span></a></li>
+							<li class=""><a href="modals.html?lang=en"><span>Modals</span></a></li>
+							<li class=""><a href="notifications.html?lang=en"><span>Notifications</span></a></li>
+							<li class=""><a href="thumbnails.html?lang=en"><span>Thumbnails</span></a></li>
+							<li class=""><a href="carousels.html?lang=en"><span>Carousels</span></a></li>
+						</ul>
+					</li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons show_thumbnails_with_lines" href="#menu_forms"><span>Forms</span></a>
+						<ul class="menuCollapse" id="menu_forms">
+							<li class=""><a href="form_wizards.html?lang=en"><span>Form Wizards</span></a></li>
+							<li class=""><a href="form_elements.html?lang=en"><span>Form Elements</span></a></li>
+							<li class=""><a href="form_validator.html?lang=en"><span>Form Validator</span></a></li>
+							<li class=""><a href="file_managers.html?lang=en"><span>File Managers</span></a></li>
+						</ul>
+					</li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons group" href="#menu_account"><span>My Account</span></a>
+						<ul class="menuCollapse" id="menu_account">
+							<li class=""><a href="my_account.html?lang=en"><span>Edit account</span></a></li>
+							<li class=""><a href="my_account_advanced.html?lang=en"><span>Advanced profile</span></a></li>
+						</ul>
+					</li>
+					<li class="glyphicons notes"><a href="landing_page.html?lang=en"><span>Landing page</span></a></li>
+					<li class="glyphicons table"><a href="pricing_tables.html?lang=en"><span>Pricing tables</span></a></li>
+					<li class="glyphicons comments"><a href="faq.html?lang=en"><span>FAQ</span></a></li>
+					<li class="glyphicons credit_card"><a href="invoice.html?lang=en"><span>Invoice</span></a></li>
+					<li class="glyphicons calendar"><a href="calendar.html?lang=en"><span>Calendar</span></a></li>
+					<li class="glyphicons user"><a href="login.html?lang=en"><span>Login</span></a></li>
+					<li class="glyphicons warning_sign"><a href="error.html?lang=en"><span>Error page</span></a></li>
+				</ul>
+				<ul>
+					<li class="heading"><span>Sections</span></li>
+					<li class="glyphicons coins"><a href="finances.html?lang=en"><span>Finances</span></a></li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons shopping_cart" href="#menu_ecommerce"><span>Online Shop</span></a>
+						<ul class="menuCollapse" id="menu_ecommerce">
+							<li class=""><a href="products.html?lang=en"><span>Products</span></a></li>
+							<li class=""><a href="product_edit.html?lang=en"><span>Add product</span></a></li>
+						</ul>
+					</li>
+					<li class="glyphicons sort"><a href="pages.html?lang=en"><span>Site Pages</span></a></li>
+					<li class="glyphicons picture"><a href="gallery.html?lang=en"><span>Photo Gallery</span></a></li>
+					<li class="glyphicons address_book"><a href="bookings.html?lang=en"><span>Bookings</span></a></li>
+				</ul>
+			</div>
+			
+			</div>
+			<!-- // Nice Scroll Wrapper END -->
+			
+		</div>
+		
+
+
+		<div id="content" 	>
+		<ul class="breadcrumb">
+	<li><a href="index.html?lang=en" class="glyphicons home"><i></i> AdminPlus</a></li>
+	<li class="divider"></li>
+	<li>Components</li>
+	<li class="divider"></li>
+	<li>Widgets</li>
+</ul>
+<div class="separator bottom"></div>
+
+<!-- Heading -->
+<div class="heading-buttons">
+	<h3 class="glyphicons show_thumbnails"><i></i>Statistical Widgets <span>with over 400 icons!</span></h3>
+	<div class="buttons pull-right">
+		<a href="" class="btn btn-source-toggle btn-default btn-icon glyphicons embed_close"><i></i>View source toggle</a>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="separator bottom"></div>
+<!-- // Heading END -->
+
+<div class="innerLR">
+
+	<div class="box-generic">
+
+	<!-- Stats Widgets -->
+	<div class="row">
+	
+		<div class="col-md-3">
+		
+			<!-- Stats Widget -->
+			<a href="" class="widget-stats">
+				<span class="glyphicons shopping_cart"><i></i></span>
+				<span class="txt"><strong>20</strong>Sales</span>
+				<div class="clearfix"></div>
+			</a>
+			<!-- // Stats Widget END -->
+			
+		</div>
+		<div class="col-md-3">
+		
+			<!-- Stats Widget -->
+			<a href="" class="widget-stats">
+				<span class="glyphicons shield"><i></i></span>
+				<span class="txt"><strong>25</strong>Alerts</span>
+				<div class="clearfix"></div>
+			</a>
+			<!-- // Stats Widget END -->
+			
+		</div>
+		<div class="col-md-3">
+		
+			<!-- Stats Widget -->
+			<a href="" class="widget-stats">
+				<span class="glyphicons user_add"><i></i></span>
+				<span class="txt"><strong>33</strong>Clients</span>
+				<div class="clearfix"></div>
+			</a>
+			<!-- // Stats Widget END -->
+			
+		</div>
+		
+		<div class="col-md-3">
+		
+			<!-- Stats Widget -->
+			<a href="" class="widget-stats">
+				<span class="glyphicons truck"><i></i></span>
+				<span class="txt"><strong>50</strong>Trucks</span>
+				<div class="clearfix"></div>
+			</a>
+			<!-- // Stats Widget END -->
+			
+		</div>
+		
+	</div>
+	<!-- // Row END -->
+	</div>
+	
+</div>
+<div class="separator bottom"></div>
+
+<!-- Stats Widgets Code Sample -->
+<div class="code innerLR show" id="code-6">
+<div class="separator bottom"></div>
+<pre class="prettyprint lang-html">
+&lt;!-- Stats Widget --&gt;
+&lt;a href="" class="widget-stats"&gt;
+	&lt;span class="glyphicons truck"&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;span class="txt"&gt;&lt;strong&gt;50&lt;/strong&gt;Trucks&lt;/span&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/a&gt;
+</pre>
+</div>
+<!-- // Stats Widgets Code Sample END -->
+
+<div class="separator bottom"></div>
+<!-- // Stats Widgets END -->
+	
+<div class="innerLR">
+	<div class="row">
+		<div class="col-md-6">
+			
+			<!-- Widget -->
+			<div class="widget widget-2">
+				<div class="widget-head"><h4 class="heading">Widget</h4></div>
+				<div class="widget-body">
+					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+				</div>
+				<span class="btn btn-toggle-code outside btn-mini btn-primary btn-icon glyphicons embed_close" data-toggle="hide" data-target="#code-1"><i></i> Source</span>
+			</div>
+			<!-- // Widget END -->
+			
+<!-- Widget Code Sample -->
+<div class="code hide" id="code-1">
+<pre class="prettyprint lang-html">
+&lt;div class="widget widget-2"&gt;
+	&lt;div class="widget-head"&gt;&lt;h4 class="heading"&gt;Widget&lt;/h4&gt;&lt;/div&gt;
+	&lt;div class="widget-body"&gt;
+		&lt;p&gt;Anim pariatur cliche reprehenderit ... &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- // Widget Code Sample END -->
+			
+			<!-- Widget -->
+			<div class="widget widget-4">
+				<div class="widget-head"><h4 class="heading">Widget</h4></div>
+				<div class="widget-body">
+					<h4>Widget</h4>
+					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+				</div>
+				<span class="btn btn-toggle-code btn-mini btn-primary btn-icon glyphicons embed_close" data-toggle="hide" data-target="#code-2"><i></i> Source</span>
+			</div>
+			<!-- // Widget With Progress Bar END -->
+			
+<!-- Widget With Progress Bar Code Sample -->
+<div class="code hide" id="code-2">
+<pre class="prettyprint lang-html">
+&lt;div class="widget widget-4"&gt;
+	&lt;div class="widget-head"&gt;&lt;h4 class="heading"&gt;Widget&lt;/h4&gt;&lt;/div&gt;
+	&lt;div class="widget-body"&gt;
+		&lt;h4&gt;Widget&lt;/h4&gt;
+		&lt;p&gt;Anim pariatur cliche reprehenderit ... &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- // Widget With Progress Bar Code Sample END -->
+
+			<!-- List Widget -->
+			<div class="widget widget-2">
+				<div class="widget-head">
+					<h4 class="heading glyphicons history"><i></i>List Widget</h4>
+					<a href="" class="details pull-right">link</a>
+				</div>
+				<div class="widget-body list">
+					<ul>
+						<li>
+							<span>List item #1</span>
+							<span class="count">&euro;5,900</span>
+						</li>
+						<li>
+							<span>List item #2</span>
+							<span class="count">36,900</span>
+						</li>
+					</ul>
+				</div>
+				<span class="btn btn-toggle-code outside btn-mini btn-primary btn-icon glyphicons embed_close" data-toggle="hide" data-target="#code-3"><i></i> Source</span>
+			</div>
+			<!-- // List Widget END -->
+
+		</div>
+		<div class="col-md-6">
+		
+
+<!-- Accordion Default -->
+			<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          Collapsible Group Item #1
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					          Collapsible Group Item #3
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse">
+					      <div class="panel-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+				  </div>
+			</div>
+
+	<!-- // Accordion Default END -->
+			
+
+
+
+
+
+
+
+
+
+
+
+<!-- Accordion Default -->
+			<div class="panel-group accordion2" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle glyphicons chevron-right" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1">
+				          Collapsible Group Item #1
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne1" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle  glyphicons chevron-right" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo1">
+				          Collapsible Group Item #2
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo1" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a class="accordion-toggle  glyphicons chevron-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree1">
+					          Collapsible Group Item #3
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree1" class="panel-collapse collapse">
+					      <div class="panel-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+				  </div>
+			</div>
+
+	<!-- // Accordion Default END -->
+
+			
+		</div>
+	</div>
+
+<!-- List Widget Code Sample -->
+<div class="code hide" id="code-3">
+<div class="separator"></div>
+<div class="box-generic">
+<h4 class="heading-mosaic">List Widget Code Sample</h4>
+<pre class="prettyprint lang-html">
+&lt;div class="widget widget-2"&gt;
+	&lt;div class="widget-head"&gt;
+		&lt;h4 class="heading glyphicons history"&gt;&lt;i&gt;&lt;/i&gt;List Widget&lt;/h4&gt;
+		&lt;a href="" class="details pull-right"&gt;link&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="widget-body list"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;span&gt;List item #1&lt;/span&gt;&lt;span class="count"&gt;5,900&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;span&gt;List item #2&lt;/span&gt;&lt;span class="count"&gt;36,900&lt;/span&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+</div>
+<div class="separator bottom"></div>
+<!-- // List Widget Code Sample END -->
+
+<!-- Accordion-2 Code Sample -->
+<div class="code hide box-generic" id="code-5">
+<h4 class="heading-mosaic">Accordion #2 Code Sample</h4>
+<pre class="prettyprint">
+&lt;div class="accordion accordion-2" id="tabAccountAccordion"&gt;
+  	&lt;div class="accordion-group"&gt;
+	    &lt;div class="accordion-heading"&gt;
+	      	&lt;a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-1-1"&gt;&lt;i&gt;&lt;/i&gt;Lorem ipsum dolor sit amet?&lt;/a&gt;
+	    &lt;/div&gt;
+	    &lt;div id="collapse-1-1" class="accordion-body collapse in"&gt;
+	      	&lt;div class="accordion-inner"&gt;Lorem ipsum dolor sit amet ...&lt;/div&gt;
+	    &lt;/div&gt;
+  	&lt;/div&gt;
+  	&lt;div class="accordion-group"&gt;
+	    &lt;div class="accordion-heading"&gt;
+	      	&lt;a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-2-1"&gt;&lt;i&gt;&lt;/i&gt;Quisque porttitor elit ac mauris?&lt;/a&gt;
+	    &lt;/div&gt;
+	    &lt;div id="collapse-2-1" class="accordion-body collapse"&gt;
+	    	&lt;div class="accordion-inner"&gt; ... &lt;/div&gt;
+	    &lt;/div&gt;
+  	&lt;/div&gt;
+  	&lt;div class="accordion-group"&gt;
+	    &lt;div class="accordion-heading"&gt;
+	      	&lt;a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-3-1"&gt;&lt;i&gt;&lt;/i&gt;Vivamus eros tortor consequat sed?&lt;/a&gt;
+	    &lt;/div&gt;
+	    &lt;div id="collapse-3-1" class="accordion-body collapse"&gt;
+	    	&lt;div class="accordion-inner"&gt; ... &lt;/div&gt;
+	    &lt;/div&gt;
+  	&lt;/div&gt;
+  	&lt;div class="accordion-group"&gt;
+	    &lt;div class="accordion-heading"&gt;
+	      	&lt;a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-4-1"&gt;&lt;i&gt;&lt;/i&gt;Etiam suscipit leo tincidunt mi volutpat?&lt;/a&gt;
+	    &lt;/div&gt;
+	    &lt;div id="collapse-4-1" class="accordion-body collapse"&gt;
+	    	&lt;div class="accordion-inner"&gt; ... &lt;/div&gt;
+	    &lt;/div&gt;
+  	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<div class="separator bottom"></div>
+<!-- // Accordion-2 Code Sample END -->
+	
+	<!-- Media Widgets -->
+	<h3 class="separator bottom">Media Widgets</h3>
+	
+	<!-- Row -->
+	<div class="row">
+	
+		<!-- Column -->
+		<div class="col-md-6">
+	
+			<div class="box-generic">
+			
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-left thumb" data-src="holder.js/51x51/dark" alt="Image" />
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+					</div>
+				</div>
+				<!-- // Media item END -->
+				
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-left thumb" data-src="holder.js/51x51/dark" alt="Image" />
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+						
+						<!-- Media item -->
+						<div class="media">
+							<img class="media-object pull-left thumb" data-src="holder.js/51x51/dark" alt="Image" />
+							<div class="media-body">
+								<h4 class="media-heading">Nested media widget</h4>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo.
+							</div>
+						</div>
+						<!-- // Media item END -->
+						
+					</div>
+				</div>
+				<!-- // Media item END -->
+		
+			</div>
+			<div class="separator bottom"></div>
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="media"&gt;
+	&lt;img class="media-object pull-left thumb" src="your-image.jpg" /&gt;
+	&lt;div class="media-body"&gt;
+		&lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+		
+		&lt;!-- Nested --&gt;
+		&lt;div class="media"&gt; ... &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	
+		</div>
+		<!-- // Column END -->
+		
+		<!-- Column -->
+		<div class="col-md-6">
+	
+			<div class="box-generic">
+		
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-right thumb" data-src="holder.js/51x51/dark" alt="Image" />
+					<div class="media-body right">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+					</div>
+				</div>
+				<!-- // Media item END -->
+				
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-right thumb" data-src="holder.js/51x51/dark" alt="Image" />
+					<div class="media-body right">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+						
+						<!-- Media item -->
+						<div class="media">
+							<img class="media-object pull-right thumb" data-src="holder.js/51x51/dark" alt="Image" />
+							<div class="media-body right">
+								<h4 class="media-heading">Nested media widget</h4>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo.
+							</div>
+						</div>
+						<!-- // Media item END -->
+						
+					</div>
+				</div>
+				<!-- // Media item END -->
+		
+			</div>
+			<div class="separator bottom"></div>
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="media"&gt;
+	&lt;img class="media-object pull-right thumb" src="your-image.jpg" /&gt;
+	&lt;div class="media-body right"&gt;
+		&lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+		
+		&lt;!-- Nested --&gt;
+		&lt;div class="media"&gt; ... &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	
+		</div>
+		<!-- // Column END -->
+		
+	</div>
+	<!-- // Row END -->
+	<!-- // Media Widgets END -->
+	
+	<!-- Nice scroll -->
+	<h3 class="separator bottom">Nice scrollable Widgets</h3>
+	
+	<!-- Row -->
+	<div class="row">
+	
+		<!-- Column -->
+		<div class="col-md-6">
+			<div class="box-generic">
+			
+				<!-- Slim Scroll -->
+				<div class="slim-scroll" data-scroll-height="255px">
+				
+					<h4>Large content scrollable box</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Phasellus laoreet fermentum risus, sed congue nisl facilisis nec. Curabitur ullamcorper ultricies erat, non posuere ipsum adipiscing tincidunt. Vivamus molestie hendrerit odio at rutrum. Suspendisse porta ligula ac eros hendrerit bibendum. Integer quis metus est, eu accumsan enim.</p>
+					<p>Nam commodo imperdiet condimentum. Maecenas in orci odio, quis sagittis augue. Aenean eu nisl turpis. Etiam gravida risus vitae nunc porttitor vestibulum. Praesent ut lorem erat, accumsan ornare erat. Nam in magna magna, nec posuere mi. Curabitur semper mi sed dui ornare vel posuere magna imperdiet. Quisque id tellus ipsum. Maecenas accumsan velit id velit pulvinar tincidunt. Nullam in ante dui. Suspendisse ut orci lectus. Nulla in nunc nec enim interdum auctor. Etiam imperdiet volutpat porta. In bibendum, tortor suscipit facilisis eleifend, lectus lacus laoreet enim, non aliquam nisi justo sit amet leo.</p>
+					<p>Nunc sed dapibus diam. Suspendisse aliquam ultricies sem et semper. Nulla varius, purus ac sodales fermentum, velit sem scelerisque tellus, et hendrerit neque justo bibendum mauris. Etiam vel neque vel dolor aliquam dignissim non sit amet mauris. Ut purus ante, accumsan in venenatis eget, auctor sit amet quam. Morbi nibh quam, lacinia id porta et, pretium id arcu. Mauris justo justo, tincidunt a rhoncus sit amet, mattis id enim. Vivamus vehicula, mi ac dapibus aliquet, sapien metus dignissim odio, vel ornare elit nulla non quam. Suspendisse id ligula odio. Maecenas nunc massa, pharetra sit amet condimentum id, tempus suscipit nisl. Nulla facilisi.</p>
+					<p>Maecenas blandit libero a enim faucibus porta. Proin id mauris non lorem tristique dignissim. Duis hendrerit commodo lorem, ac pellentesque dolor sodales sed. Vivamus accumsan erat sed sem mollis facilisis. Praesent vel magna felis, quis convallis augue. Donec dictum, dolor in fermentum venenatis, est nunc fermentum nulla, at suscipit magna dolor a metus. Pellentesque malesuada pellentesque tellus, tristique eleifend dolor tempor vitae. Phasellus sed sem non massa varius mollis. Curabitur non suscipit nunc. Sed vel metus sapien, in pharetra nisi. In vel nibh et odio congue tristique. Praesent non eros purus. Aenean eleifend lacus iaculis tellus eleifend sodales. Cras auctor tellus ac dui vehicula pretium. Proin non ipsum a elit molestie sodales eu in nisi. In ac nulla tortor, sollicitudin imperdiet nisl.</p>
+					<p>Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		
+				</div>
+				<!-- // Slim Scroll END -->
+				
+			</div>
+			<div class="separator bottom"></div>
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="box-generic"&gt;
+	&lt;div class="slim-scroll" data-scroll-height="250px"&gt;
+		&lt;h4&gt;Large content scrollable box&lt;/h4&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Phasellus laoreet fermentum risus, sed congue nisl facilisis nec. Curabitur ullamcorper ultricies erat, non posuere ipsum adipiscing tincidunt. Vivamus molestie hendrerit odio at rutrum. Suspendisse porta ligula ac eros hendrerit bibendum. Integer quis metus est, eu accumsan enim.&lt;/p&gt;
+		&lt;p&gt;Nam commodo imperdiet condimentum. Maecenas in orci odio, quis sagittis augue. Aenean eu nisl turpis. Etiam gravida risus vitae nunc porttitor vestibulum. Praesent ut lorem erat, accumsan ornare erat. Nam in magna magna, nec posuere mi. Curabitur semper mi sed dui ornare vel posuere magna imperdiet. Quisque id tellus ipsum. Maecenas accumsan velit id velit pulvinar tincidunt. Nullam in ante dui. Suspendisse ut orci lectus. Nulla in nunc nec enim interdum auctor. Etiam imperdiet volutpat porta. In bibendum, tortor suscipit facilisis eleifend, lectus lacus laoreet enim, non aliquam nisi justo sit amet leo.&lt;/p&gt;
+		&lt;p&gt;Nunc sed dapibus diam. Suspendisse aliquam ultricies sem et semper. Nulla varius, purus ac sodales fermentum, velit sem scelerisque tellus, et hendrerit neque justo bibendum mauris. Etiam vel neque vel dolor aliquam dignissim non sit amet mauris. Ut purus ante, accumsan in venenatis eget, auctor sit amet quam. Morbi nibh quam, lacinia id porta et, pretium id arcu. Mauris justo justo, tincidunt a rhoncus sit amet, mattis id enim. Vivamus vehicula, mi ac dapibus aliquet, sapien metus dignissim odio, vel ornare elit nulla non quam. Suspendisse id ligula odio. Maecenas nunc massa, pharetra sit amet condimentum id, tempus suscipit nisl. Nulla facilisi.&lt;/p&gt;
+		&lt;p&gt;Maecenas blandit libero a enim faucibus porta. Proin id mauris non lorem tristique dignissim. Duis hendrerit commodo lorem, ac pellentesque dolor sodales sed. Vivamus accumsan erat sed sem mollis facilisis. Praesent vel magna felis, quis convallis augue. Donec dictum, dolor in fermentum venenatis, est nunc fermentum nulla, at suscipit magna dolor a metus. Pellentesque malesuada pellentesque tellus, tristique eleifend dolor tempor vitae. Phasellus sed sem non massa varius mollis. Curabitur non suscipit nunc. Sed vel metus sapien, in pharetra nisi. In vel nibh et odio congue tristique. Praesent non eros purus. Aenean eleifend lacus iaculis tellus eleifend sodales. Cras auctor tellus ac dui vehicula pretium. Proin non ipsum a elit molestie sodales eu in nisi. In ac nulla tortor, sollicitudin imperdiet nisl.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	
+		</div>
+		<!-- // Column END -->
+		
+		<!-- Column -->
+		<div class="col-md-6">
+		
+			<!-- Widget Scroll -->
+			<div class="widget widget-4 widget-scroll" data-scroll-height="219px">
+				<div class="widget-head">
+					<h4 class="heading">Large content scrollable box</h4>
+				</div>
+				<div class="widget-body">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Phasellus laoreet fermentum risus, sed congue nisl facilisis nec. Curabitur ullamcorper ultricies erat, non posuere ipsum adipiscing tincidunt. Vivamus molestie hendrerit odio at rutrum. Suspendisse porta ligula ac eros hendrerit bibendum. Integer quis metus est, eu accumsan enim.</p>
+						<p>Nam commodo imperdiet condimentum. Maecenas in orci odio, quis sagittis augue. Aenean eu nisl turpis. Etiam gravida risus vitae nunc porttitor vestibulum. Praesent ut lorem erat, accumsan ornare erat. Nam in magna magna, nec posuere mi. Curabitur semper mi sed dui ornare vel posuere magna imperdiet. Quisque id tellus ipsum. Maecenas accumsan velit id velit pulvinar tincidunt. Nullam in ante dui. Suspendisse ut orci lectus. Nulla in nunc nec enim interdum auctor. Etiam imperdiet volutpat porta. In bibendum, tortor suscipit facilisis eleifend, lectus lacus laoreet enim, non aliquam nisi justo sit amet leo.</p>
+						<p>Nunc sed dapibus diam. Suspendisse aliquam ultricies sem et semper. Nulla varius, purus ac sodales fermentum, velit sem scelerisque tellus, et hendrerit neque justo bibendum mauris. Etiam vel neque vel dolor aliquam dignissim non sit amet mauris. Ut purus ante, accumsan in venenatis eget, auctor sit amet quam. Morbi nibh quam, lacinia id porta et, pretium id arcu. Mauris justo justo, tincidunt a rhoncus sit amet, mattis id enim. Vivamus vehicula, mi ac dapibus aliquet, sapien metus dignissim odio, vel ornare elit nulla non quam. Suspendisse id ligula odio. Maecenas nunc massa, pharetra sit amet condimentum id, tempus suscipit nisl. Nulla facilisi.</p>
+						<p>Maecenas blandit libero a enim faucibus porta. Proin id mauris non lorem tristique dignissim. Duis hendrerit commodo lorem, ac pellentesque dolor sodales sed. Vivamus accumsan erat sed sem mollis facilisis. Praesent vel magna felis, quis convallis augue. Donec dictum, dolor in fermentum venenatis, est nunc fermentum nulla, at suscipit magna dolor a metus. Pellentesque malesuada pellentesque tellus, tristique eleifend dolor tempor vitae. Phasellus sed sem non massa varius mollis. Curabitur non suscipit nunc. Sed vel metus sapien, in pharetra nisi. In vel nibh et odio congue tristique. Praesent non eros purus. Aenean eleifend lacus iaculis tellus eleifend sodales. Cras auctor tellus ac dui vehicula pretium. Proin non ipsum a elit molestie sodales eu in nisi. In ac nulla tortor, sollicitudin imperdiet nisl.</p>
+						<p>Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					</div>
+				</div>
+			</div>
+			<!-- // Widget Scroll END -->
+			
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="widget widget-4 widget-scroll" data-scroll-height="250px"&gt;
+	&lt;div class="widget-head"&gt;
+		&lt;h4 class="heading"&gt;Large content scrollable box&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;div class="widget-body"&gt;
+		&lt;div&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet ...&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	
+		</div>
+		<!-- // Column END -->
+		
+	</div>
+	<!-- // Row END -->
+	<!-- // Media Widgets END -->
+	
+	<!-- Wells -->
+	<h3>Wells <span>Lightweight utility</span></h3>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="well margin-none">
+				<address class="margin-none">
+					<h2>John Doe</h2>
+					<strong>Business manager</strong> at 
+					<strong><a href="#">Business</a></strong><br> 
+					<abbr title="Work email">e-mail:</abbr> <a href="mailto:#">john.doe@mybiz.com</a><br /> 
+					<abbr title="Work Phone">phone:</abbr> (012) 345-678-901<br/>
+					<abbr title="Work Fax">fax:</abbr> (012) 678-132-901
+					<div class="separator line"></div>
+					<p class="margin-none"><strong>You can also find us:</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique rutrum libero, vel bibendum nunc consectetur sed.</p>
+				</address>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="well margin-none">
+				<h2>Wells are cool</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+				<p class="margin-none">Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus.</p>
+			</div>
+		</div>
+	</div>
+	<div class="separator bottom"></div>
+	
+	<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="well margin-none"&gt;
+	&lt;address class="margin-none"&gt;
+		&lt;h2&gt;John Doe&lt;/h2&gt;
+		&lt;strong&gt;Business manager&lt;/strong&gt; at 
+		&lt;strong&gt;&lt;a href="#"&gt;Business&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt; 
+		&lt;abbr title="Work email"&gt;e-mail:&lt;/abbr&gt; &lt;a href="mailto:#"&gt;john.doe@mybiz.com&lt;/a&gt;&lt;br/&gt; 
+		&lt;abbr title="Work Phone"&gt;phone:&lt;/abbr&gt; (012) 345-678-901&lt;br/&gt;
+		&lt;abbr title="Work Fax"&gt;fax:&lt;/abbr&gt; (012) 678-132-901
+		&lt;div class="separator line"&gt;&lt;/div&gt;
+		&lt;p class="margin-none"&gt;&lt;strong&gt;You can also find us:&lt;/strong&gt;&lt;br/&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique rutrum libero, vel bibendum nunc consectetur sed.&lt;/p&gt;
+	&lt;/address&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	<div class="separator bottom"></div>
+	<!-- // Wells END -->
+	
+	<!-- Collapsible Widgets -->
+	<h3>Collapsible Widgets <span>Make any widget collapsible</span></h3>
+	<div class="row">
+		<div class="col-md-6">
+			
+			<!-- Collapsible Widget -->
+			<div class="widget widget-2" data-toggle="collapse-widget">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget END -->
+			
+		</div>
+		<div class="col-md-6">
+			
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget widget-2" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget widget-2" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget widget-2" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget widget-2" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget widget-2" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						
+		</div>
+	</div>
+	<div class="separator bottom"></div>
+	
+	<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="widget widget-4" data-toggle="collapse-widget" data-collapse-closed="true"&gt;
+	&lt;div class="widget-head"&gt;&lt;h4 class="heading"&gt;Collapsible widget&lt;/h4&gt;&lt;/div&gt;
+	&lt;div class="widget-body"&gt;
+		Nunc vitae diam eget arcu rutrum euismod ...
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+
+	<strong>How:</strong> Just attach the HTML5 attribute <code>data-toggle="collapse-widget"</code> to any regular widget, and to make it closed by default, just add <code>data-collapse-closed="true"</code>
+	<div class="separator"></div>
+	<!-- // Collapsible Widgets END -->
+	
+	<!-- Collapsible Widgets -->
+	<h3>Timeline Widgets <span>vizualize events in time with style</span></h3>
+			
+	<!-- Timeline Widget -->
+	<div class="widget-timeline">
+		<ul class="list-timeline">
+			
+									<!-- Item -->
+			<li>
+				<span class="date">21/03</span>
+				<span class="glyphicons activity-icon user_add"><i></i></span>
+				<span class="ellipsis"><a href="">John Doe</a> registered at <a href="">Melisa Ragae's</a> suggestion.</span>
+				<div class="clearfix"></div>
+			</li>
+			<!-- // Item END -->
+						<!-- Item -->
+			<li>
+				<span class="date">21/03</span>
+				<span class="glyphicons activity-icon user_add"><i></i></span>
+				<span class="ellipsis"><a href="">John Doe</a> registered at <a href="">Martin Glades's</a> suggestion.</span>
+				<div class="clearfix"></div>
+			</li>
+			<!-- // Item END -->
+						<!-- Item -->
+			<li>
+				<span class="date">21/03</span>
+				<span class="glyphicons activity-icon user_add"><i></i></span>
+				<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">Jane Doe's</a> suggestion.</span>
+				<div class="clearfix"></div>
+			</li>
+			<!-- // Item END -->
+						<!-- Item -->
+			<li>
+				<span class="date">21/03</span>
+				<span class="glyphicons activity-icon user_add"><i></i></span>
+				<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">John Doe's</a> suggestion.</span>
+				<div class="clearfix"></div>
+			</li>
+			<!-- // Item END -->
+						<!-- Item -->
+			<li>
+				<span class="date">21/03</span>
+				<span class="glyphicons activity-icon user_add"><i></i></span>
+				<span class="ellipsis"><a href="">John Doe</a> registered at <a href="">John Doe's</a> suggestion.</span>
+				<div class="clearfix"></div>
+			</li>
+			<!-- // Item END -->
+						<!-- Item -->
+			<li>
+				<span class="date">21/03</span>
+				<span class="glyphicons activity-icon user_add"><i></i></span>
+				<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">John Doe's</a> suggestion.</span>
+				<div class="clearfix"></div>
+			</li>
+			<!-- // Item END -->
+						
+		</ul>
+		<a href="" class="btn btn-primary view-all">View all</a>
+	</div>
+	<!-- Timeline Widget END -->
+	<div class="separator"></div>
+			
+	<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="widget-timeline"&gt;
+	&lt;ul class="list-timeline"&gt;
+		&lt;li&gt;
+			&lt;span class="date"&gt;21/03&lt;/span&gt;
+			&lt;span class="glyphicons activity-icon user_add"&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class="ellipsis"&gt;&lt;a href=""&gt;Jessica&lt;/a&gt; registered at &lt;a href=""&gt;John's&lt;/a&gt; suggestion.&lt;/span&gt;
+			&lt;div class="clearfix"&gt;&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;a href="" class="btn btn-primary view-all"&gt;View all&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+
+	<div class="separator"></div>
+	<!-- // Collapsible Widgets END -->
+	
+	<!-- Other Widgets -->
+	<h3>Other</h3>
+	<div class="box-generic">
+	
+	<!-- Simple heading with arrow preview & code sample -->
+	<h4 class="heading-arrow">Simple heading with arrow</h4>
+	<div class="separator bottom"></div>
+<div class="code show">
+<pre class="prettyprint lang-html">
+&lt;h4 class="heading-arrow"&gt;Simple heading with arrow&lt;/h4&gt;
+</pre>
+<div class="separator bottom"></div>
+</div>
+	<!-- // Simple heading with arrow preview & code sample END -->
+
+	<!-- Links widget preview & code sample -->
+	<div class="menubar links primary">
+		<ul>
+			<li>Link widget:</li>
+			<li><a href="">Button 1</a></li>
+			<li class="divider"></li>
+			<li><a href="">Button 2</a></li>
+			<li class="divider"></li>
+			<li><a href="">Button 3</a></li>
+		</ul>
+	</div>
+	<div class="separator bottom"></div>
+			
+<div class="code show">
+<pre class="prettyprint lang-html margin-none">
+&lt;div class="menubar links primary"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Link widget:&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+</div>
+	<!-- // Links widget preview & code sample END -->
+
+	</div>
+	<!-- // Other Widgets END -->
+	
+	<div class="separator bottom"></div>
+
+</div>		
+				<!-- End Content -->
+		</div>
+		
+				<!-- End Wrapper -->
+		</div>
+		
+		<!-- Sticky Footer -->
+		<div id="footer" class="visible-desktop hidden-print">
+	      	<div class="wrap">
+	      		<ul>
+	      			<li class="dropdown dropup">
+	      				<span data-toggle="dropdown" class="dropdown-toggle glyphicons cogwheel text" title=""><i></i><span class="hidden-phone">Layout Options</span></span>
+	      				<ul class="dropdown-menu pull-left">
+	      					<li class="active"><a href="#" data-toggle="layout" data-layout="fixed" title="">Fixed layout</a></li>
+	      					<li><a href="#" data-toggle="layout" data-layout="fluid" title="">Fluid layout</a></li>
+	      				</ul>
+	      			</li>
+	      			<li class="dropdown dropup">
+	      				<span data-toggle="dropdown" class="dropdown-toggle glyphicons settings text" title=""><i></i><span class="hidden-phone">Menu Options</span></span>
+	      				<ul class="dropdown-menu pull-left">
+	      					<li class="active"><a href="#" data-toggle="menuPosition" data-menuPosition="left-menu" title="">Left menu</a></li>
+	      					<li><a href="#" data-toggle="menuPosition" data-menuPosition="right-menu" title="">Right menu</a></li>
+	      				</ul>
+	      			</li>
+	      			<li><a href="documentation/index.html?lang=en" class="glyphicons circle_question_mark text" title=""><i></i><span class="hidden-phone">Documentation</span></a></li>
+	      		</ul>
+	      	</div>
+	    </div>
+	    				
+	</div>
+	
+	<div id="themer" class="collapse">
+		<div class="wrapper">
+			<span class="close2">&times; close</span>
+			<h4>Themer <span>color options</span></h4>
+			<ul>
+				<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+				<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+				<li>
+					<span class="link" id="themer-custom-reset">reset theme</span>
+					<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+				</li>
+			</ul>
+			<div id="themer-getcode" class="hide">
+				<hr class="separator" />
+				<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+				<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JQueryUI v1.9.2 -->
+	<script src="../common/theme/scripts/plugins/system/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="../common/theme/scripts/plugins/system/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- MiniColors -->
+	<script src="../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- Select2 -->
+	<script src="../common/theme/scripts/plugins/forms/select2/select2.js"></script>
+	
+	<!-- jQuery Slim Scroll Plugin -->
+	<script src="../common/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- Common Demo Script -->
+	<script src="../common/theme/scripts/demo/common.js?1382104445"></script>
+	
+	<!-- Holder Plugin -->
+	<script src="../common/theme/scripts/plugins/other/holder/holder.js"></script>
+	<script>Holder.add_theme("dark", {background:"#000", foreground:"#aaa", size:9})</script>
+	
+	<!-- Twitter Feed -->
+	<script src="../common/theme/scripts/demo/twitter.js"></script>
+	
+	<!-- Colors -->
+	<script>
+	var primaryColor = '#4a8bc2',
+		dangerColor = '#b55151',
+		successColor = '#609450',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	</script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = '#DA4C4C';
+	</script>
+	<script src="../common/theme/scripts/plugins/system/jquery.cookie.js"></script>
+	<script src="../common/theme/scripts/demo/themer.js"></script>
+	
+	<!-- Global -->
+	<script>
+	var basePath = '',
+		commonPath = '../common/',
+
+		
+		// charts data
+		charts_data = {
+			
+			// 24 hours
+			graph24hours: {
+				from: 1381874400000,
+				to: 1381960800000			},
+
+			// 7 days
+			graph7days: {
+				from: 1381356000000,
+				to: 1381960800000			},
+
+			// 14 days
+			graph14days: {
+				from: 1380751200000,
+				to: 1381960800000			},
+
+			// main dashboard graph - website traffic
+			website_traffic: {
+				d1: [[1379455200000, 3179],[1379541600000, 2032],[1379628000000, 3089],[1379714400000, 3034],[1379800800000, 3167],[1379887200000, 3117],[1379973600000, 2680],[1380060000000, 3395],[1380146400000, 3282],[1380232800000, 2334],[1380319200000, 2383],[1380405600000, 3778],[1380492000000, 3054],[1380578400000, 2034],[1380664800000, 3053],[1380751200000, 2339],[1380837600000, 3092],[1380924000000, 2175],[1381010400000, 2781],[1381096800000, 2030],[1381183200000, 3182],[1381269600000, 3579],[1381356000000, 2526],[1381442400000, 2496],[1381528800000, 3631],[1381615200000, 2717],[1381701600000, 3751],[1381788000000, 3018],[1381874400000, 3460],[1381960800000, 2326]],
+				d2: [[1379455200000, 480],[1379541600000, 495],[1379628000000, 446],[1379714400000, 498],[1379800800000, 508],[1379887200000, 649],[1379973600000, 455],[1380060000000, 487],[1380146400000, 562],[1380232800000, 685],[1380319200000, 594],[1380405600000, 644],[1380492000000, 651],[1380578400000, 476],[1380664800000, 439],[1380751200000, 636],[1380837600000, 676],[1380924000000, 615],[1381010400000, 636],[1381096800000, 645],[1381183200000, 615],[1381269600000, 681],[1381356000000, 601],[1381442400000, 678],[1381528800000, 521],[1381615200000, 538],[1381701600000, 445],[1381788000000, 622],[1381874400000, 655],[1381960800000, 535]]	
+			}
+
+		};
+	</script>
+	
+	
+	<!-- Resize Script -->
+	<script src="../common/theme/scripts/plugins/other/jquery.ba-resize.js"></script>
+	
+	<!-- Uniform -->
+	<script src="../common/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+	
+	<!-- Bootstrap Script -->
+	<script src="../common/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="../common/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<!-- <script src="../common/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script> -->
+	<script src="../common/bootstrap/extend/bootstrap-switch/static/js/bootstrap-switch.min.js"></script>
+	<script src="../common/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="../common/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootbox.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js" type="text/javascript"></script>
+	
+	<!-- Layout Options DEMO Script -->
+	<script src="../common/theme/scripts/demo/layout.js"></script>
+	
+	<!-- google-code-prettify -->
+	<script src="../common/theme/scripts/plugins/other/google-code-prettify/prettify.js"></script>
+	
+	<!-- Gritter Notifications Plugin -->
+	<script src="../common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js"></script>
+	
+	<!-- Notyfy -->
+	<script type="text/javascript" src="../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,274 @@
+/*--------------------------------------------------------------
+9.0 Supports
+--------------------------------------------------------------*/
+/* Custom Semantic-UI
+------------------------------*/
+
+/* Popup */
+.ui.popup {
+
+}
+
+/* Accordion */
+.ui.accordion, .ui.accordion .accordion {
+	border-radius: 0;
+}
+
+/* Button */
+.ui.button {
+	background: $meta;
+	font-family: $heading;
+	font-weight: normal;
+	text-transform: uppercase !important;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 0.7px;
+	border-radius: 0;
+	padding: 0.7em 1.2em;
+	&:hover {
+		color: #fff;
+		background: $primary;
+	}
+	margin-bottom: 10px;
+}
+.ui.button:focus {
+	box-shadow: none;
+	color: #fff;
+}
+
+.ui.button.colored {
+	background: $primary;
+	&:hover{
+		background: $meta;
+	}
+}
+
+.ui.huge.button {
+	padding: 15px 30px;;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	font-size: 15px;
+}
+
+.ui.soundcloud.button {
+	background: #f50;
+}
+
+.ui.spotify.button {
+	background: #81b71a;
+}
+
+/* RoyalSlider: Animate Block : Home Slider 1
+------------------------------*/
+.royalSlider {
+	width: 100%;
+}
+
+#home-slider-1.royalSlider {
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+	   -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+	        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+}
+
+.rsABlock {
+  position: relative;
+  display: block;
+  left: auto;
+  top: auto;
+}
+
+.rsContent {
+  color: #FFF;
+  float: left;
+}
+
+.rsVideo .bContainer {
+	bottom: 200px;
+	span {
+		background: $primary;
+	}
+}
+
+.bContainer {
+  position: relative;
+  display: block;
+  left: auto;
+  bottom: 240px;
+  text-align:center;
+}
+
+.rs_text {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+}
+
+.rs_text_meta {
+	margin-bottom: 10px;
+}
+
+.rs_text_box span {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px 30px;
+	font-family: $heading;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+	@include for(medium-screens) {
+		font-size: 40px;
+	}
+}
+
+/* Button Position */
+.rsMinW .rsArrowRight {
+	top: 50%;
+	right: 30px;
+	margin-top: -16px;
+}
+
+.rsMinW .rsArrowLeft {
+	top: 50%;
+	left: 30px;
+	margin-top: -16px;
+}
+
+.rsMinW .rsBullet {
+	padding: 6px 8px 6px 4px;
+}
+
+.rsMinW .rsBullets {
+	right: 50%;
+}
+
+/* RoyalSlider: Videos
+------------------------------*/
+.rsVideos {
+	padding: 7px;
+	background: #222222;
+	@extend .dark_shadow;
+	margin-bottom: 30px;
+	@include border-radius( 3px );
+}
+
+.video_wrapper {
+	padding: 7px 7px 0px 7px;
+	background: #222222;
+	@extend .dark_shadow;
+	margin-bottom: 30px;
+	@include border-radius( 3px );
+}
+
+.video_lightbox {
+	padding: 7px 7px 7px 7px;
+	background: #222222;
+	@extend .dark_shadow;
+	margin-bottom: 30px;
+	position: relative;
+	@include border-radius( 3px );
+}
+
+.video_lightbox:hover img {
+	opacity: 0.5;
+}
+
+.video_button {
+	width: 64px;
+	height: 64px;
+	background: url("assets/images/rs-default.png") no-repeat scroll 0 -34px rgba(0, 0, 0, 0.75);
+	@include border-radius( 100px );
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -33px;
+	margin-top: -33px;
+	top: 50%;
+	border: 2px solid #cccccc;
+}
+
+/* RoyalSlider: Gallery Slideshow
+------------------------------*/
+#gallery-slideshow {
+	  width: 100%;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;  
+	  user-select: none;
+}
+
+/* Gallery Masonry
+------------------------------*/
+#gallery-masonry {
+	width: 100% !important;
+	.gmitem {
+		width: 33%;
+		padding: 7px;
+	}
+	.gmitem.w2 {
+		width: 66%;
+	}
+}
+
+/* Image Lightbox
+------------------------------*/
+.image-lightbox {
+	position: relative;
+	padding: 7px 7px 7px 7px;
+	background: #222222;
+	@extend .dark_shadow;
+	position: relative;
+	@include border-radius( 3px );
+}
+
+.image-button {
+	background: url("assets/images/rs-default.png") repeat scroll 0 0 #ff0000;
+	@include border-radius( 100px );
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -16px;
+	margin-left: -16px;
+	display: block;
+	opacity: 0;
+}
+
+.image-lightbox:hover .image-button {
+	opacity: 1;
+}
+.image-lightbox:hover img {
+	opacity: 0.4;
+}
+
+/* Gallery Carousel
+------------------------------*/
+#gallery_carousel {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	.box_content {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.owl-controls .owl-next {
+		right: 0px;
+	}
+}
+
+
+.gallery_carousel  {
+	.gallery_item .image-lightbox {
+		margin: 0px 10px;
+		padding: 3px;
+	}
+}
+
+
+
+
+
+

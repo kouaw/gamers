@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+4.0 Widgets
+--------------------------------------------------------------*/
+.widget-area aside {
+	margin-bottom: 50px;
+}
+
+.widget-title {
+	@extend .widget_heading;
+}
+
+.widget {
+	ul {
+		list-style: none;
+		padding-left: 0px;
+	}
+}
+
+/* Events Widget
+------------------------------*/
+.event_widget {
+	article {
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	.event_left {
+		width: 38px;
+		float: left;
+		margin-right: $gutter/2;
+		font-family: $heading;
+		text-transform: uppercase;
+		margin-top:5px;
+		position: relative;
+		z-index: 0;
+		.event_date {
+			color:$white;
+			background:#444444;
+			min-width: 35px;
+			text-align: center;
+			display: inline-block;
+			position: relative;
+			z-index: 100;
+			@include border-radius(2px);
+			font-size: 19px;
+			margin-bottom: 3px;
+			padding: 4px 0;
+			-webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+		   		-moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+		        	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+		    &:before{
+		    	content: "";
+		    	display: block;
+		    	position: absolute;
+		    	width: 30px;
+		    	height: 1px;
+		    	background: #777777;
+		    	top: 21px;
+		    	left: 1px;
+		    	z-index: -9999;
+		    }
+		}
+		.event_month {
+			width: 36px;
+			text-align: center;
+		}
+	}
+
+	.event_detail {
+		overflow: hidden;
+		.event_title {
+			font-size: 14px;
+			margin-bottom: 5px;
+			color: #fff;
+			a:hover {
+				color: $primary;
+			}
+		}
+
+		.event_time, .event_location {
+			font-size: 12px;
+			margin-bottom: 0px;
+		}
+
+		.event_button {
+			margin-top: 10px;
+		}
+	}
+}
+
+/* Video Slider
+------------------------------*/
+.video_slider {
+	.widget-content {
+		border: 8px solid #212121;
+		@include border-radius( 3px );
+	}
+}

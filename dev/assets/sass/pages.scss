@@ -1,0 +1,238 @@
+/*--------------------------------------------------------------
+4.0 Pages
+--------------------------------------------------------------*/
+.page-title {
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+/* Events
+------------------------------*/
+.events_page .event_widget {
+
+	.event_left .event_date {
+		font-size: 17px;
+		padding: 2px 0px;
+		&:before {
+			top: 17px;
+			width: 33px;
+		}
+	}
+
+	.event_item {
+		padding: 15px 20px 20px 20px;
+		background: #212121;
+		margin-bottom: 30px;
+		position: relative;
+	}
+
+	.event_item.has_map {
+		padding: 20px;
+		.event_map {
+			margin-bottom: 15px;
+		}
+	}
+	
+	.event_detail {
+
+		.event_time, .event_location {
+			display: block;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+
+		.event_title {
+			margin-bottom: 10px
+		}
+		
+		@include for(large-screens) {
+			.event_time, .event_location {
+				display: inline-block;
+				margin-bottom: 0px;
+			}
+			.event_button {
+				margin: 0px;
+				float: right;
+				margin-top: -12px;
+			}
+			.event_title {
+				margin: 7px 0px 3px;
+			}
+		}
+
+	}
+}
+
+.event_single {
+	.event_item {
+		padding: 15px 20px 20px 20px;
+		background: #212121;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.event_item.has_map {
+		padding: 20px;
+		.event_map {
+			margin-bottom: 15px;
+		}
+	}
+	.event_time, .event_location {
+		display: block;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.event_button {
+		margin: 0px;
+		margin-top: -12px;
+		margin-left: 5px;
+	}
+}
+
+/* Albums
+------------------------------*/
+.album {
+	border: 8px solid #212121;
+	@extend .dark_shadow;
+	position: relative;
+	.overlay_title {
+		h2{
+			font-size: 23px;
+			color: #fff;
+		}
+	}
+}
+.album:hover .overlay {
+	opacity: 0.3;
+}
+.album:hover .overlay_title {
+	opacity: 1;
+}
+
+	/* Single Albumn */
+	.album-thumb {
+		border: 8px solid #212121;
+		margin-bottom: 20px;
+		@extend .dark_shadow;
+	}
+	.album-release, .album-share {
+		margin-bottom: 15px;
+		font-family: $heading;
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 1px;
+		span {
+			color: #fff;
+		}
+	}
+
+	.album-share a {
+		font-size: 15px;
+		color: #fff;
+		margin-right: 0px;
+		margin-left: 4px; 
+	}
+
+	.single-album {
+
+		.page-header h1 {
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.single-album .player_box{
+		margin-bottom: 20px;
+	}
+	
+	.album-buy {
+		padding-top: 3px;
+		text-align: left;
+		margin-bottom: 30px;
+		@include for(medium-screens) {
+			text-align: right;
+			margin-bottom: 0px;
+		}
+		a.ui.button {
+			margin-left: 2px;
+		}
+	}
+
+	.related-alumn {
+		margin-top: 40px;
+		padding-top: 20px;
+		border-top: 3px solid #212121;
+	}
+
+	.album-buy.album-buy-sidebar {
+		text-align: left;
+		margin-bottom: 30px;
+		a.ui.button {
+			margin-right: 2px;
+		}
+	}
+
+/* Contact
+------------------------------*/
+.map-contact {
+	iframe {
+		margin-bottom: 15px;
+	}
+	
+	margin-bottom: 30px;
+	padding: 20px 20px 20px 20px;
+	background: #212121;
+	color: #fff;
+}
+
+/* About
+------------------------------*/
+.page_featured_image {
+	position: relative;
+	.featured_title {
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
+		display: block;
+	}
+	.featured_title span {
+		display: inline-block;
+		color: #ffffff;
+		background: #ff0000;
+		padding: 5px 20px;
+		font-family: $heading;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 50px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin-bottom:10px;
+		@include for(medium-screens) {
+			font-size: 35px;
+		}
+
+	}
+}
+
+/* Filterable Gallery
+------------------------------*/
+.gallery-filterable .image-lightbox {
+	margin-bottom: 0px !important;
+}
+
+.filterable-menu {
+	padding-top: 3px;
+	text-align: left;
+	margin-bottom: 30px;
+	@include for(medium-screens) {
+		text-align: right;
+		margin-bottom: 0px;
+	}
+	a.ui.button {
+		margin-left: 2px;
+	}
+}
+
+
+
+
+

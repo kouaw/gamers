@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<title>AdminPlus - Premium Bootstrap Admin Template (v3.0)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<!-- Bootstrap -->
+	<link href="../common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Bootstrap Extended -->
+	<link href="../common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="../common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../common/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+	
+	<!-- Select2 -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/forms/select2/select2.css"/>
+	
+	<!-- Notyfy -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.css"/>
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/notifications/notyfy/themes/default.css"/>
+	
+	<!-- Gritter Notifications Plugin -->
+	<link href="../common/theme/scripts/plugins/notifications/Gritter/css/jquery.gritter.css" rel="stylesheet" />
+	
+	<!-- JQueryUI v1.9.2 -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/system/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+	
+		
+	<!-- glyphicons -->
+	<link rel="stylesheet" href="../common/theme/css/glyphicons.css" />
+	
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="../common/theme/css/font-awesome/css/font-awesome.min.css" />
+	
+	
+	<!-- Bootstrap Extended -->
+	<link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-select/bootstrap-select.css" />
+	<!-- <link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" /> -->
+	<link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-switch/static/stylesheets/bootstrap-switch.css" />
+	
+	<!-- Uniform -->
+	<link rel="stylesheet" media="screen" href="../common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" />
+	
+	<!-- google-code-prettify -->
+	<link href="../common/theme/scripts/plugins/other/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+
+	<!-- JQuery v1.8.2 -->
+	<script src="../common/theme/scripts/plugins/system/jquery-1.8.2.min.js"></script>
+	
+	<!-- Modernizr -->
+	<script src="../common/theme/scripts/plugins/system/modernizr.custom.76094.js"></script>
+	
+	<!-- MiniColors -->
+	<link rel="stylesheet" media="screen" href="../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" />
+	
+	<!-- Theme -->
+	<link rel="stylesheet" href="../common/theme/css/style.css?1382104445" />
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36057737-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	
+	<!-- LESS 2 CSS -->
+	<script src="../common/theme/scripts/plugins/system/less-1.3.3.min.js"></script>
+	
+</head>
+<body>
+	
+	<!-- Start Content -->
+	<div class="first-container container fluid">
+		
+		<div class="navbar main hidden-print">
+			
+						
+			<a href="php/index.html?lang=en" class="appbrand"><span>Admin+ <span>lovely headline here</span></span></a>
+			
+						<!-- Menu Toggle Button -->
+				<button type="button" class="btn btn-navbar">
+                	<span class="glyphicons show_lines toggle"></span>
+				</button>
+			<!-- // Menu Toggle Button END -->
+                        
+			
+						<ul class="topnav pull-right">
+				<li class="visible-lg">
+					<ul class="notif">
+						<li><a href="" class="glyphicons envelope" data-toggle="tooltip" data-placement="bottom" data-original-title="5 new messages"> 5</a></li>
+						<li><a href="" class="glyphicons shopping_cart" data-toggle="tooltip" data-placement="bottom" data-original-title="1 new orders"> 1</a></li>
+						<li><a href="" class="glyphicons log_book" data-toggle="tooltip" data-placement="bottom" data-original-title="3 new activities"> 3</a></li>
+					</ul>
+				</li>
+				<li class="dropdown visible-lg">
+					<a href="" data-toggle="dropdown" class="glyphicons cogwheel">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="">Some option</a></li>
+						<li><a href="">Some other option</a></li>
+						<li><a href="">Other option</a></li>
+					</ul>
+				</li>
+								<li class="hidden-xs"><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper"><span>Themer</span></a></li>
+								<li class="hidden-sm hidden-xs">
+					<a href="#" data-toggle="dropdown"><img src="../common/theme/images/lang/en.png" alt="en" /></a>
+			    	<ul class="dropdown-menu pull-right">
+			      		<li class="active"><a href="?page=form_wizards&amp;lang=en" title="English"><img src="../common/theme/images/lang/en.png" alt="English"> English</a></li>
+			      		<li><a href="?page=form_wizards&amp;lang=ro" title="Romanian"><img src="../common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+			      		<li><a href="?page=form_wizards&amp;lang=it" title="Italian"><img src="../common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+			      		<li><a href="?page=form_wizards&amp;lang=fr" title="French"><img src="../common/theme/images/lang/fr.png" alt="French"> French</a></li>
+			      		<li><a href="?page=form_wizards&amp;lang=pl" title="Polish"><img src="../common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+			    	</ul>
+				</li>
+				<li class="account">
+										<a data-toggle="dropdown" href="my_account.html?lang=en" class="glyphicons logout lock"><span class="hidden-sm text">mosaicpro</span></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="my-accoutn.html?lang=en" class="glyphicons cogwheel">Settings</a></li>
+						<li><a href="my_account.html?lang=en" class="glyphicons camera">My Photos</a></li>
+						<li class="highlight profile">
+							<span>
+								<span class="heading">Profile <a href="my_account.html?lang=en" class="pull-right">edit</a></span>
+								<span class="img"></span>
+								<span class="details">
+									<a href="my_account.html?lang=en">Mosaic Pro</a>
+									contact@mosaicpro.biz
+								</span>
+								<span class="clearfix"></span>
+							</span>
+						</li>
+						<li>
+							<span>
+								<a class="btn btn-default btn-small pull-right" style="padding: 2px 10px; background: #fff;" href="login.html?lang=en">Sign Out</a>
+							</span>
+						</li>
+					</ul>
+									</li>
+			</ul>
+									
+		</div>
+		
+						<div id="wrapper">
+		<div id="menu" class="hidden-sm hidden-print">
+			<div id="menuInner">
+			
+				<!-- Scrollable menu wrapper with Maximum height -->
+				<div class="slim-scroll" data-scroll-height="420px">
+				
+				<div id="search">
+					<input type="text" placeholder="Quick search ..." />
+					<button class="glyphicons search"></button>
+				</div>
+				<ul>
+					<li class="heading"><span>Category</span></li>
+					<li class="glyphicons home"><a href="index.html?lang=en"><span>Dashboard</span></a></li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons settings" href="#menu_components"><span>Components</span></a>
+						<ul class="menuCollapse" id="menu_components">
+							<li class=""><a href="ui.html?lang=en"><span>UI Elements</span></a></li>
+							<li class=""><a href="tabs.html?lang=en"><span>Tabs</span></a></li>
+							<li class=""><a href="tables.html?lang=en"><span>Tables</span></a></li>
+							<li class=""><a href="charts.html?lang=en"><span>Charts</span></a></li>
+							<li class=""><a href="widgets.html?lang=en"><span>Widgets</span></a></li>
+							<li class=""><a href="grid.html?lang=en"><span>Grid</span></a></li>
+							<li class=""><a href="icons.html?lang=en"><span>Icons</span></a></li>
+							<li class=""><a href="modals.html?lang=en"><span>Modals</span></a></li>
+							<li class=""><a href="notifications.html?lang=en"><span>Notifications</span></a></li>
+							<li class=""><a href="thumbnails.html?lang=en"><span>Thumbnails</span></a></li>
+							<li class=""><a href="carousels.html?lang=en"><span>Carousels</span></a></li>
+						</ul>
+					</li>
+					<li class="hasSubmenu active">
+						<a data-toggle="collapse" class="glyphicons show_thumbnails_with_lines" href="#menu_forms"><span>Forms</span></a>
+						<ul class="menuCollapse in" id="menu_forms">
+							<li class=" active"><a href="form_wizards.html?lang=en"><span>Form Wizards</span></a></li>
+							<li class=""><a href="form_elements.html?lang=en"><span>Form Elements</span></a></li>
+							<li class=""><a href="form_validator.html?lang=en"><span>Form Validator</span></a></li>
+							<li class=""><a href="file_managers.html?lang=en"><span>File Managers</span></a></li>
+						</ul>
+					</li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons group" href="#menu_account"><span>My Account</span></a>
+						<ul class="menuCollapse" id="menu_account">
+							<li class=""><a href="my_account.html?lang=en"><span>Edit account</span></a></li>
+							<li class=""><a href="my_account_advanced.html?lang=en"><span>Advanced profile</span></a></li>
+						</ul>
+					</li>
+					<li class="glyphicons notes"><a href="landing_page.html?lang=en"><span>Landing page</span></a></li>
+					<li class="glyphicons table"><a href="pricing_tables.html?lang=en"><span>Pricing tables</span></a></li>
+					<li class="glyphicons comments"><a href="faq.html?lang=en"><span>FAQ</span></a></li>
+					<li class="glyphicons credit_card"><a href="invoice.html?lang=en"><span>Invoice</span></a></li>
+					<li class="glyphicons calendar"><a href="calendar.html?lang=en"><span>Calendar</span></a></li>
+					<li class="glyphicons user"><a href="login.html?lang=en"><span>Login</span></a></li>
+					<li class="glyphicons warning_sign"><a href="error.html?lang=en"><span>Error page</span></a></li>
+				</ul>
+				<ul>
+					<li class="heading"><span>Sections</span></li>
+					<li class="glyphicons coins"><a href="finances.html?lang=en"><span>Finances</span></a></li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons shopping_cart" href="#menu_ecommerce"><span>Online Shop</span></a>
+						<ul class="menuCollapse" id="menu_ecommerce">
+							<li class=""><a href="products.html?lang=en"><span>Products</span></a></li>
+							<li class=""><a href="product_edit.html?lang=en"><span>Add product</span></a></li>
+						</ul>
+					</li>
+					<li class="glyphicons sort"><a href="pages.html?lang=en"><span>Site Pages</span></a></li>
+					<li class="glyphicons picture"><a href="gallery.html?lang=en"><span>Photo Gallery</span></a></li>
+					<li class="glyphicons address_book"><a href="bookings.html?lang=en"><span>Bookings</span></a></li>
+				</ul>
+			</div>
+			
+			</div>
+			<!-- // Nice Scroll Wrapper END -->
+			
+		</div>
+		
+
+
+		<div id="content" 	>
+		<ul class="breadcrumb">
+	<li><a href="index.html?lang=en" class="glyphicons home"><i></i> AdminPlus</a></li>
+	<li class="divider"></li>
+	<li>Forms</li>
+	<li class="divider"></li>
+	<li>Form Wizards</li>
+</ul>
+<div class="separator bottom"></div>
+
+<h3 class="glyphicons magic"><i></i>Form Wizards</h3>
+<div class="innerLR">
+
+<!-- Form Wizard / Widget Tabs / Vertical -->
+<div class="wizard">
+	<div class="widget widget-tabs widget-tabs-double widget-tabs-vertical row row-merge">
+	
+		<!-- Widget heading -->
+		<div class="widget-head col-md-3">
+			<ul>
+				<li class="active"><a href="#tab1-4" class="glyphicons user" data-toggle="tab"><i></i><span class="strong">Step 1</span><span>Personal details</span></a></li>
+				<li><a href="#tab2-4" class="glyphicons calculator" data-toggle="tab"><i></i><span class="strong">Step 2</span><span>Billing details</span></a></li>
+				<li><a href="#tab3-4" class="glyphicons credit_card" data-toggle="tab"><i></i><span class="strong">Step 3</span><span>Payment</span></a></li>
+				<li><a href="#tab4-4" class="glyphicons circle_ok" data-toggle="tab"><i></i><span class="strong">Step 4</span><span>Confirmation</span></a></li>
+			</ul>
+		</div>
+		<!-- // Widget heading END -->
+		
+		<div class="widget-body col-md-9">
+			<div class="tab-content">
+			
+				<!-- Step 1 -->
+				<div class="tab-pane active" id="tab1-4">
+					<div class="row">
+						<div class="col-md-3">
+							<strong>Product title</strong>
+							<p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+						<div class="col-md-9">
+							<label for="inputTitle">Title</label>
+							<input type="text" id="inputTitle" class="col-md-6 form-control" value="" placeholder="Enter product title ..." />
+							<div class="separator"></div>
+						</div>
+					</div>
+				</div>
+				<!-- // Step 1 END -->
+				
+				<!-- Step 2 -->
+				<div class="tab-pane" id="tab2-4">
+					<div class="row">
+						<div class="col-md-3">
+							<strong>Description</strong>
+							<p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+						<div class="col-md-9">
+							<label for="textDescription">Description</label>
+							<textarea id="textDescription" class="wysihtml5 form-control" style="width: 96%;" rows="5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</textarea>
+						</div>
+					</div>
+				</div>
+				<!-- // Step 2 END -->
+				
+				<!-- Step 3 -->
+				<div class="tab-pane" id="tab3-4">
+					<h4>Third tab</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+				</div>
+				<!-- // Step 3 END -->
+				
+				<!-- Step 4 -->
+				<div class="tab-pane" id="tab4-4">
+					<h4>Fourth tab</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+				</div>
+				<!-- // Step 4 END -->
+				
+				<!-- Wizard pagination controls -->
+				<ul class="pagination margin-bottom-none pull-left">
+					<li class="primary previous first"><a href="#" class="no-ajaxify">First</a></li>
+					<li class="last primary"><a href="#" class="no-ajaxify">Last</a></li>
+				</ul>
+				<ul class="pagination margin-bottom-none pull-right">
+					<li class="primary previous"><a href="#" class="no-ajaxify">Previous</a></li>
+					<li class="next primary"><a href="#" class="no-ajaxify">Next</a></li>
+					<li class="next finish primary" style="display:none;"><a href="#" class="no-ajaxify">Finish</a></li>
+				</ul>
+				<div class="clearfix"></div>
+				<!-- // Wizard pagination controls END -->
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- // Form Wizard / Widget Tabs / Vertical END -->
+
+	<!-- Form Wizard / Widget Tabs / Simple -->
+<div class="wizard">
+        <div class="widget widget-2 widget-tabs">
+        
+                <!-- Widget heading -->
+                <div class="widget-head">
+                        <ul>
+                                <li class="active"><a href="#tab1-1" class="glyphicons home" data-toggle="tab"><i></i>First</a></li>
+                                <li><a href="#tab2-1" class="glyphicons umbrella" data-toggle="tab"><i></i>Second</a></li>
+                                <li><a href="#tab3-1" class="glyphicons fishes" data-toggle="tab"><i></i>Third</a></li>
+                                <li><a href="#tab4-1" class="glyphicons car" data-toggle="tab"><i></i>Fourth</a></li>
+                                <li><a href="#tab5-1" class="glyphicons leaf" data-toggle="tab"><i></i>Fifth</a></li>
+                                <li><a href="#tab6-1" class="glyphicons cup" data-toggle="tab"><i></i>Sixth</a></li>
+                                <li><a href="#tab7-1" class="glyphicons tie" data-toggle="tab"><i></i>Seventh</a></li>
+                        </ul>
+                </div>
+                <!-- // Widget heading END -->
+                
+                <div class="widget-body">
+                        <div class="tab-content">
+                        
+                                <!-- Step 1 -->
+                                <div class="tab-pane active" id="tab1-1">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Product title</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="inputTitle">Title</label>
+                                                        <input type="text" id="inputTitle" class="col-md-6 form-control" value="" placeholder="Enter product title ..." />
+                                                        <div class="separator"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 1 END -->
+                                
+                                <!-- Step 2 -->
+                                <div class="tab-pane" id="tab2-1">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Description</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="textDescription">Description</label>
+                                                        <textarea id="textDescription" class="wysihtml5 form-control" style="width: 96%;" rows="5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</textarea>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 2 END -->
+                                
+                                <!-- Step 3 -->
+                                <div class="tab-pane" id="tab3-1">
+                                        <h4>Third tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 3 END -->
+                                
+                                <!-- Step 4 -->
+                                <div class="tab-pane" id="tab4-1">
+                                        <h4>Fourth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 4 END -->
+                                
+                                <!-- Step 5 -->
+                                <div class="tab-pane" id="tab5-1">
+                                        <h4>Fifth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 5 END -->
+                                
+                                <!-- Step 6 -->
+                                <div class="tab-pane" id="tab6-1">
+                                        <h4>Sixth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 6 END -->
+                                
+                                <!-- Step 7 -->
+                                <div class="tab-pane" id="tab7-1">
+                                        <h4>Seventh tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 7 END -->
+                                
+                        </div>
+                        
+                        <!-- Wizard pagination controls -->
+                        <ul class="pagination margin-bottom-none">
+                                <li class="primary previous first"><a href="#" class="no-ajaxify">First</a></li>
+                                <li class="primary previous"><a href="#" class="no-ajaxify">Previous</a></li>
+                                <li class="last primary"><a href="#" class="no-ajaxify">Last</a></li>
+                                <li class="next primary"><a href="#" class="no-ajaxify">Next</a></li>
+                                <li class="next finish primary" style="display:none;"><a href="#" class="no-ajaxify">Finish</a></li>
+                        </ul>
+                        <!-- // Wizard pagination controls END -->
+                        
+                </div>
+                </div>
+</div>
+<!-- // Form Wizard / Widget Tabs / Simple END -->
+	
+	<!-- Form Wizard / Widget Tabs / Double Style -->
+<div class="wizard">
+        <div class="widget widget-tabs widget-tabs-double">
+        
+                <!-- Widget heading -->
+                <div class="widget-head">
+                        <ul>
+                                <li class="active"><a href="#tab1-2" class="glyphicons user" data-toggle="tab"><i></i><span class="strong">Step 1</span><span>Personal details</span></a></li>
+                                <li><a href="#tab2-2" class="glyphicons calculator" data-toggle="tab"><i></i><span class="strong">Step 2</span><span>Billing details</span></a></li>
+                                <li><a href="#tab3-2" class="glyphicons credit_card" data-toggle="tab"><i></i><span class="strong">Step 3</span><span>Payment</span></a></li>
+                                <li><a href="#tab4-2" class="glyphicons circle_ok" data-toggle="tab"><i></i><span class="strong">Step 4</span><span>Confirmation</span></a></li>
+                        </ul>
+                </div>
+                <!-- // Widget heading END -->
+                
+                <div class="widget-body">
+                        <div class="tab-content">
+                        
+                                <!-- Step 1 -->
+                                <div class="tab-pane active" id="tab1-2">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Product title</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="inputTitle">Title</label>
+                                                        <input type="text" id="inputTitle" class="col-md-6 form-control" value="" placeholder="Enter product title ..." />
+                                                        <div class="separator"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 1 END -->
+                                
+                                <!-- Step 2 -->
+                                <div class="tab-pane" id="tab2-2">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Description</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="textDescription">Description</label>
+                                                        <textarea id="textDescription" class="wysihtml5 form-control" style="width: 96%;" rows="5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</textarea>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 2 END -->
+                                
+                                <!-- Step 3 -->
+                                <div class="tab-pane" id="tab3-2">
+                                        <h4>Third tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 3 END -->
+                                
+                                <!-- Step 4 -->
+                                <div class="tab-pane" id="tab4-2">
+                                        <h4>Fourth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 4 END -->
+                                
+                        </div>
+                        
+                        <!-- Wizard pagination controls -->
+                        <ul class="pagination margin-bottom-none">
+                                <li class="primary previous first"><a href="#" class="no-ajaxify">First</a></li>
+                                <li class="primary previous"><a href="#" class="no-ajaxify">Previous</a></li>
+                                <li class="last primary"><a href="#" class="no-ajaxify">Last</a></li>
+                                <li class="next primary"><a href="#" class="no-ajaxify">Next</a></li>
+                                <li class="next finish primary" style="display:none;"><a href="#" class="no-ajaxify">Finish</a></li>
+                        </ul>
+                        <!-- // Wizard pagination controls END -->
+                        
+                </div>
+        </div>
+</div>
+<!-- // Form Wizard / Widget Tabs / Double Style END -->
+
+	<!-- Form Wizard / Widget Pills -->
+<div class="wizard">
+        <div class="widget widget-2 widget-tabs widget-wizard-pills">
+        
+                <!-- Widget heading -->
+                <div class="widget-head">
+                        <ul>
+                                <li class="status"><span class="r">Step <span class="step-current">2</span> of <span class="steps-total">5</span></span><span class="r text-primary">Completed: <span class="steps-complete">1</span></span></li>
+                                <li class="active no-padding"><a href="#tab1-3" data-toggle="tab">1</a></li>
+                                <li><a href="#tab2-3" data-toggle="tab">2</a></li>
+                                <li><a href="#tab3-3" data-toggle="tab">3</a></li>
+                                <li><a href="#tab4-3" data-toggle="tab">4</a></li>
+                        </ul>
+                </div>
+                <!-- // Widget heading END -->
+                
+                <div class="widget-body">
+                        <div class="tab-content">
+                        
+                                <!-- Step 1 -->
+                                <div class="tab-pane active" id="tab1-3">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Product title</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="inputTitle">Title</label>
+                                                        <input type="text" id="inputTitle" class="col-md-6 form-control" value="" placeholder="Enter product title ..." />
+                                                        <div class="separator"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 1 END -->
+                                
+                                <!-- Step 2 -->
+                                <div class="tab-pane" id="tab2-3">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Description</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="textDescription">Description</label>
+                                                        <textarea id="textDescription" class="wysihtml5 form-control" style="width: 96%;" rows="5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</textarea>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 2 END -->
+                                
+                                <!-- Step 3 -->
+                                <div class="tab-pane" id="tab3-3">
+                                        <h4>Third tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 3 END -->
+                                
+                                <!-- Step 4 -->
+                                <div class="tab-pane" id="tab4-3">
+                                        <h4>Fourth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 4 END -->
+                                
+                        </div>
+                        
+                        <!-- Wizard pagination controls -->
+                        <ul class="pagination margin-bottom-none pull-left">
+                                <li class="primary previous first"><a href="#" class="no-ajaxify">First</a></li>
+                                <li class="last primary"><a href="#" class="no-ajaxify">Last</a></li>
+                        </ul>
+                        <ul class="pagination margin-bottom-none pull-right">
+                                <li class="primary previous"><a href="#" class="no-ajaxify">Previous</a></li>
+                                <li class="next primary"><a href="#" class="no-ajaxify">Next</a></li>
+                                <li class="next finish primary" style="display:none;"><a href="#" class="no-ajaxify">Finish</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <!-- // Wizard pagination controls END -->
+                        
+                </div>
+        </div>
+</div>
+<!-- // Form Wizard / Widget Pills END -->
+	
+	<!-- Form Wizard / Arrow navigation & Progress bar -->
+<div id="rootwizard" class="wizard">
+
+        <!-- Wizard heading -->
+        <div class="wizard-head">
+                <ul>
+                        <li><a href="#tab1" data-toggle="tab">First</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Second</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Third</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Fourth</a></li>
+                        <li><a href="#tab5" data-toggle="tab">Fifth</a></li>
+                        <li><a href="#tab6" data-toggle="tab">Sixth</a></li>
+                        <li><a href="#tab7" data-toggle="tab">Seventh</a></li>
+                </ul>
+        </div>
+        <!-- // Wizard heading END -->
+        
+        <div class="widget widget-2">
+        
+                <!-- Wizard Progress bar -->
+             <div class="widget-head progress progress-primary margin-none" id="bar">
+                                <div class="progress-bar progress-bar-none" role="progressbar">
+                                        Step <strong class="step-current">1</strong> of <strong class="steps-total">3</strong> - <strong class="steps-percent">100%</strong>
+                                </div>
+                        </div>
+      
+
+                <!-- // Wizard Progress bar END -->
+                
+                <div class="widget-body">
+                        <div class="tab-content">
+                
+                                <!-- Step 1 -->
+                                <div class="tab-pane active" id="tab1">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Product title</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="inputTitle">Title</label>
+                                                        <input type="text" id="inputTitle" class="col-md-6 form-control" value="" placeholder="Enter product title ..." />
+                                                        <div class="separator"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 1 END -->
+                                
+                                <!-- Step 2 -->
+                                <div class="tab-pane" id="tab2">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                        <strong>Description</strong>
+                                                        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                        <label for="textDescription">Description</label>
+                                                        <textarea id="textDescription" class="wysihtml5 form-control" style="width: 96%;" rows="5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</textarea>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- // Step 2 END -->
+                                
+                                <!-- Step 3 -->
+                                <div class="tab-pane" id="tab3">
+                                        <h4>Third tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 3 END -->
+                                
+                                <!-- Step 4 -->
+                                <div class="tab-pane" id="tab4">
+                                        <h4>Fourth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 4 END -->
+                                
+                                <!-- Step 5 -->
+                                <div class="tab-pane" id="tab5">
+                                        <h4>Fifth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 5 END -->
+                                
+                                <!-- Step 6 -->
+                                <div class="tab-pane" id="tab6">
+                                        <h4>Sixth tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 6 END -->
+                                
+                                <!-- Step 7 -->
+                                <div class="tab-pane" id="tab7">
+                                        <h4>Seventh tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices libero vel massa egestas facilisis. Mauris convallis augue nec dolor dignissim vestibulum. Praesent imperdiet elit posuere arcu posuere consectetur. Morbi dignissim eleifend nibh, eget tincidunt nibh dignissim hendrerit. Cras iaculis congue lorem, eget gravida augue vehicula sed. Nam lorem sem, consectetur ac tempus quis, consectetur ut lectus. In bibendum luctus pharetra. Morbi lacinia sem sem. Phasellus quis tellus magna.</p>
+                                </div>
+                                <!-- // Step 7 END -->
+                        
+                        </div>
+                
+                        <!-- Wizard pagination controls -->
+                        <ul class="pagination margin-bottom-none">
+                                <li class="primary previous first"><a href="#" class="no-ajaxify">First</a></li>
+                                <li class="primary previous"><a href="#" class="no-ajaxify">Previous</a></li>
+                                <li class="last primary"><a href="#" class="no-ajaxify">Last</a></li>
+                                <li class="next primary"><a href="#" class="no-ajaxify">Next</a></li>
+                                <li class="next finish primary" style="display:none;"><a href="#" class="no-ajaxify">Finish</a></li>
+                        </ul>
+                        <!-- // Wizard pagination controls END -->
+                        
+                </div>
+        </div>
+</div>
+<!-- // Form Wizard / Arrow navigation & Progress bar END -->
+	
+</div>		
+				<!-- End Content -->
+		</div>
+		
+				<!-- End Wrapper -->
+		</div>
+		
+		<!-- Sticky Footer -->
+		<div id="footer" class="visible-desktop hidden-print">
+	      	<div class="wrap">
+	      		<ul>
+	      			<li class="dropdown dropup">
+	      				<span data-toggle="dropdown" class="dropdown-toggle glyphicons cogwheel text" title=""><i></i><span class="hidden-phone">Layout Options</span></span>
+	      				<ul class="dropdown-menu pull-left">
+	      					<li class="active"><a href="#" data-toggle="layout" data-layout="fixed" title="">Fixed layout</a></li>
+	      					<li><a href="#" data-toggle="layout" data-layout="fluid" title="">Fluid layout</a></li>
+	      				</ul>
+	      			</li>
+	      			<li class="dropdown dropup">
+	      				<span data-toggle="dropdown" class="dropdown-toggle glyphicons settings text" title=""><i></i><span class="hidden-phone">Menu Options</span></span>
+	      				<ul class="dropdown-menu pull-left">
+	      					<li class="active"><a href="#" data-toggle="menuPosition" data-menuPosition="left-menu" title="">Left menu</a></li>
+	      					<li><a href="#" data-toggle="menuPosition" data-menuPosition="right-menu" title="">Right menu</a></li>
+	      				</ul>
+	      			</li>
+	      			<li><a href="documentation/index.html?lang=en" class="glyphicons circle_question_mark text" title=""><i></i><span class="hidden-phone">Documentation</span></a></li>
+	      		</ul>
+	      	</div>
+	    </div>
+	    				
+	</div>
+	
+	<div id="themer" class="collapse">
+		<div class="wrapper">
+			<span class="close2">&times; close</span>
+			<h4>Themer <span>color options</span></h4>
+			<ul>
+				<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+				<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+				<li>
+					<span class="link" id="themer-custom-reset">reset theme</span>
+					<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+				</li>
+			</ul>
+			<div id="themer-getcode" class="hide">
+				<hr class="separator" />
+				<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+				<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JQueryUI v1.9.2 -->
+	<script src="../common/theme/scripts/plugins/system/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="../common/theme/scripts/plugins/system/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- MiniColors -->
+	<script src="../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- Select2 -->
+	<script src="../common/theme/scripts/plugins/forms/select2/select2.js"></script>
+	
+	<!-- jQuery Slim Scroll Plugin -->
+	<script src="../common/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- Common Demo Script -->
+	<script src="../common/theme/scripts/demo/common.js?1382104445"></script>
+	
+	<!-- Holder Plugin -->
+	<script src="../common/theme/scripts/plugins/other/holder/holder.js"></script>
+	<script>Holder.add_theme("dark", {background:"#000", foreground:"#aaa", size:9})</script>
+	
+	<!-- Twitter Feed -->
+	<script src="../common/theme/scripts/demo/twitter.js"></script>
+	
+	<!-- Colors -->
+	<script>
+	var primaryColor = '#4a8bc2',
+		dangerColor = '#b55151',
+		successColor = '#609450',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	</script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = '#DA4C4C';
+	</script>
+	<script src="../common/theme/scripts/plugins/system/jquery.cookie.js"></script>
+	<script src="../common/theme/scripts/demo/themer.js"></script>
+	
+	<!-- Global -->
+	<script>
+	var basePath = '',
+		commonPath = '../common/',
+
+		
+		// charts data
+		charts_data = {
+			
+			// 24 hours
+			graph24hours: {
+				from: 1381874400000,
+				to: 1381960800000			},
+
+			// 7 days
+			graph7days: {
+				from: 1381356000000,
+				to: 1381960800000			},
+
+			// 14 days
+			graph14days: {
+				from: 1380751200000,
+				to: 1381960800000			},
+
+			// main dashboard graph - website traffic
+			website_traffic: {
+				d1: [[1379455200000, 3759],[1379541600000, 3018],[1379628000000, 3186],[1379714400000, 2716],[1379800800000, 3482],[1379887200000, 2315],[1379973600000, 2863],[1380060000000, 3217],[1380146400000, 3574],[1380232800000, 2479],[1380319200000, 2846],[1380405600000, 3198],[1380492000000, 2721],[1380578400000, 3111],[1380664800000, 3045],[1380751200000, 2632],[1380837600000, 3877],[1380924000000, 2171],[1381010400000, 2006],[1381096800000, 3764],[1381183200000, 3740],[1381269600000, 3703],[1381356000000, 2216],[1381442400000, 2513],[1381528800000, 2671],[1381615200000, 2383],[1381701600000, 3719],[1381788000000, 3506],[1381874400000, 2772],[1381960800000, 2980]],
+				d2: [[1379455200000, 503],[1379541600000, 597],[1379628000000, 691],[1379714400000, 549],[1379800800000, 647],[1379887200000, 443],[1379973600000, 468],[1380060000000, 645],[1380146400000, 418],[1380232800000, 688],[1380319200000, 602],[1380405600000, 408],[1380492000000, 616],[1380578400000, 445],[1380664800000, 482],[1380751200000, 626],[1380837600000, 602],[1380924000000, 573],[1381010400000, 453],[1381096800000, 539],[1381183200000, 691],[1381269600000, 557],[1381356000000, 452],[1381442400000, 573],[1381528800000, 611],[1381615200000, 693],[1381701600000, 498],[1381788000000, 694],[1381874400000, 539],[1381960800000, 524]]	
+			}
+
+		};
+	</script>
+	
+	
+	<!-- Resize Script -->
+	<script src="../common/theme/scripts/plugins/other/jquery.ba-resize.js"></script>
+	
+	<!-- Uniform -->
+	<script src="../common/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+	
+	<!-- Bootstrap Script -->
+	<script src="../common/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="../common/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<!-- <script src="../common/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script> -->
+	<script src="../common/bootstrap/extend/bootstrap-switch/static/js/bootstrap-switch.min.js"></script>
+	<script src="../common/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="../common/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootbox.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js" type="text/javascript"></script>
+	
+	<!-- Layout Options DEMO Script -->
+	<script src="../common/theme/scripts/demo/layout.js"></script>
+	
+	<!-- google-code-prettify -->
+	<script src="../common/theme/scripts/plugins/other/google-code-prettify/prettify.js"></script>
+	
+	<!-- Gritter Notifications Plugin -->
+	<script src="../common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js"></script>
+	
+	<!-- Notyfy -->
+	<script type="text/javascript" src="../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js"></script>
+	
+	<!-- Bootstrap Form Wizard Plugin -->
+	<script src="../common/bootstrap/extend/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+	
+	<!-- Form Wizards Page Demo Script -->
+	<script src="../common/theme/scripts/demo/form_wizards.js"></script>
+
+</body>
+</html>

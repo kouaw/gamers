@@ -1,0 +1,17 @@
+-- table streamer
+
+id => id
+streamer => pseudo/nom nginx
+pres => presentation
+video_default => dedie/twitch/daily/hitbox/game
+tchat_default => dedie/twitch/hitbox
+titre_source => sql/twitch/hitox ( media_title)
+twitter => user twitter
+twitch => user twitch
+youtube => user youtube
+google => user google+
+facebook => user facebook
+hitbox => user hitbox
+game => user gaminglife
+dailymotion => user dailymotion
+id_compte => id compte  site 

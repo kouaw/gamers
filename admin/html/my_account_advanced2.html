@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<title>Administration Gamers City</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<!-- Bootstrap -->
+	<link href="../common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Bootstrap Extended -->
+	<link href="../common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="../common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../common/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+	
+	<!-- Select2 -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/forms/select2/select2.css"/>
+	
+	<!-- Notyfy -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.css"/>
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/notifications/notyfy/themes/default.css"/>
+	
+	<!-- Gritter Notifications Plugin -->
+	<link href="../common/theme/scripts/plugins/notifications/Gritter/css/jquery.gritter.css" rel="stylesheet" />
+	
+	<!-- JQueryUI v1.9.2 -->
+	<link rel="stylesheet" href="../common/theme/scripts/plugins/system/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+	
+		
+	<!-- glyphicons -->
+	<link rel="stylesheet" href="../common/theme/css/glyphicons.css" />
+	
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="../common/theme/css/font-awesome/css/font-awesome.min.css" />
+	
+	
+	<!-- Bootstrap Extended -->
+	<link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-select/bootstrap-select.css" />
+	<!-- <link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" /> -->
+	<link rel="stylesheet" href="../common/bootstrap/extend/bootstrap-switch/static/stylesheets/bootstrap-switch.css" />
+	
+	<!-- Uniform -->
+	<link rel="stylesheet" media="screen" href="../common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" />
+	
+	<!-- google-code-prettify -->
+	<link href="../common/theme/scripts/plugins/other/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+
+	<!-- JQuery v1.8.2 -->
+	<script src="../common/theme/scripts/plugins/system/jquery-1.8.2.min.js"></script>
+	
+	<!-- Modernizr -->
+	<script src="../common/theme/scripts/plugins/system/modernizr.custom.76094.js"></script>
+	
+	<!-- MiniColors -->
+	<link rel="stylesheet" media="screen" href="../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" />
+	
+	<!-- Theme -->
+	<link rel="stylesheet" href="../common/theme/css/style.css?1382104445" />
+	
+	<!-- Google Analytics -->
+
+	
+	<!-- LESS 2 CSS -->
+	<script src="../common/theme/scripts/plugins/system/less-1.3.3.min.js"></script>
+	
+</head>
+<body>
+	
+	<!-- Start Content -->
+	<div class="first-container container fluid">
+		
+		<div class="navbar main hidden-print">
+			
+						
+			<a href="php/index.html?lang=en" class="appbrand"><span>Gamers city</span></a>
+			
+						<!-- Menu Toggle Button -->
+				<button type="button" class="btn btn-navbar">
+                	<span class="glyphicons show_lines toggle"></span>
+				</button>
+			<!-- // Menu Toggle Button END -->
+                        
+			
+						<ul class="topnav pull-right">
+				<!--<li class="visible-lg">
+					<ul class="notif">
+						<li><a href="" class="glyphicons envelope" data-toggle="tooltip" data-placement="bottom" data-original-title="5 new messages"> 5</a></li>
+						<li><a href="" class="glyphicons shopping_cart" data-toggle="tooltip" data-placement="bottom" data-original-title="1 new orders"> 1</a></li>
+						<li><a href="" class="glyphicons log_book" data-toggle="tooltip" data-placement="bottom" data-original-title="3 new activities"> 3</a></li>
+					</ul>
+				</li>
+				<li class="dropdown visible-lg">
+					<a href="" data-toggle="dropdown" class="glyphicons cogwheel">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="">Some option</a></li>
+						<li><a href="">Some other option</a></li>
+						<li><a href="">Other option</a></li>
+					</ul>
+				</li>-->
+								<li class="hidden-xs"><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper"><span>Themes</span></a></li>
+								<!--<li class="hidden-sm hidden-xs">
+					<a href="#" data-toggle="dropdown"><img src="../common/theme/images/lang/en.png" alt="en" /></a>
+			    	<ul class="dropdown-menu pull-right">
+			      		<li class="active"><a href="?page=my_account_advanced&amp;lang=en" title="English"><img src="../common/theme/images/lang/en.png" alt="English"> English</a></li>
+			      		<li><a href="?page=my_account_advanced&amp;lang=ro" title="Romanian"><img src="../common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+			      		<li><a href="?page=my_account_advanced&amp;lang=it" title="Italian"><img src="../common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+			      		<li><a href="?page=my_account_advanced&amp;lang=fr" title="French"><img src="../common/theme/images/lang/fr.png" alt="French"> French</a></li>
+			      		<li><a href="?page=my_account_advanced&amp;lang=pl" title="Polish"><img src="../common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+			    	</ul>
+				</li>-->
+				<li class="account">
+										<a data-toggle="dropdown" href="my_account.html?lang=en" class="glyphicons logout lock"><span class="hidden-sm text">Orion</span></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="my-accoutn.html?lang=en" class="glyphicons cogwheel">Options</a></li>
+						<!--<li><a href="my_account.html?lang=en" class="glyphicons camera">My Photos</a></li>-->
+						<!--<li class="highlight profile">
+							<span>
+								<span class="heading">Profile <a href="my_account.html?lang=en" class="pull-right">edition</a></span>
+								<span class="img"></span>
+								<span class="details">
+									<a href="my_account.html?lang=en">Mosaic Pro</a>
+									contact@mosaicpro.biz
+								</span>
+								<span class="clearfix"></span>
+							</span>
+						</li>-->
+						<li>
+							<span>
+								<a class="btn btn-default btn-small pull-right" style="padding: 2px 10px; background: #fff;" href="login.html?lang=en">Déconnexion</a>
+							</span>
+						</li>
+					</ul>
+									</li>
+			</ul>
+									
+		</div>
+		
+						<div id="wrapper">
+		<div id="menu" class="hidden-sm hidden-print">
+			<div id="menuInner">
+			
+				<!-- Scrollable menu wrapper with Maximum height -->
+				<div class="slim-scroll" data-scroll-height="420px">
+				
+				<!--<div id="search">
+					<input type="text" placeholder="Quick search ..." />
+					<button class="glyphicons search"></button>
+				</div>-->
+				<ul>
+					<li class="heading"><span>Categorie</span></li>
+					<li class="glyphicons home"><a href="index.html?lang=en"><span>Acceuil</span></a></li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons settings" href="#menu_components"><span>Streameur</span></a>
+						<ul class="menuCollapse" id="menu_components">
+							<li class="glyphicons user_add"><a href="ui.html?lang=en"><span>Ajouter</span></a></li>
+							<li class="glyphicons user_remove"><a href="tables.html?lang=en"><span>Suppresion</span></a></li>
+							<!--<li class=""><a href="charts.html?lang=en"><span>Charts</span></a></li>
+							<li class=""><a href="widgets.html?lang=en"><span>Widgets</span></a></li>
+							<li class=""><a href="grid.html?lang=en"><span>Grid</span></a></li>
+							<li class=""><a href="icons.html?lang=en"><span>Icons</span></a></li>
+							<li class=""><a href="modals.html?lang=en"><span>Modals</span></a></li>
+							<li class=""><a href="notifications.html?lang=en"><span>Notifications</span></a></li>
+							<li class=""><a href="thumbnails.html?lang=en"><span>Thumbnails</span></a></li>
+							<li class=""><a href="carousels.html?lang=en"><span>Carousels</span></a></li>-->
+						</ul>
+					</li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons notes" href="#menu_forms"><span>News</span></a>
+						<ul class="menuCollapse" id="menu_forms">
+							<li class="glyphicons plus"><a  href="form_wizards.html?lang=en"><span>Ajouts</span></a></li>
+							<li class="glyphicons redo"><a  href="form_elements.html?lang=en"><span>Suppresion</span></a></li>
+							<li class="glyphicons minus"><a  href="form_validator.html?lang=en"><span>Editions</span></a></li>
+							<!--<li class=""><a href="file_managers.html?lang=en"><span>File Managers</span></a></li>-->
+						</ul>
+					</li>
+					<li class="hasSubmenu active">
+						<a data-toggle="collapse" class="glyphicons group" href="#menu_account"><span>Compte</span></a>
+						<ul class="menuCollapse in" id="menu_account">
+							<li class="glyphicons edit"><a  href="my_account.html?lang=en"><span>Edition</span></a></li>
+							<!--<li class=" active"><a href="my_account_advanced.html?lang=en"><span>Advanced profile</span></a></li>-->
+						</ul>
+					</li>
+					<!--<li class="glyphicons notes"><a href="landing_page.html?lang=en"><span>Landing page</span></a></li>
+					<li class="glyphicons table"><a href="pricing_tables.html?lang=en"><span>Pricing tables</span></a></li>
+					<li class="glyphicons comments"><a href="faq.html?lang=en"><span>FAQ</span></a></li>
+					<li class="glyphicons credit_card"><a href="invoice.html?lang=en"><span>Invoice</span></a></li>
+					<li class="glyphicons calendar"><a href="calendar.html?lang=en"><span>Calendar</span></a></li>
+					<li class="glyphicons user"><a href="login.html?lang=en"><span>Login</span></a></li>
+					<li class="glyphicons warning_sign"><a href="error.html?lang=en"><span>Error page</span></a></li>-->
+				</ul>
+				<!--<ul>
+					<li class="heading"><span>Sections</span></li>
+					<li class="glyphicons coins"><a href="finances.html?lang=en"><span>Finances</span></a></li>
+					<li class="hasSubmenu">
+						<a data-toggle="collapse" class="glyphicons shopping_cart" href="#menu_ecommerce"><span>Online Shop</span></a>
+						<ul class="menuCollapse" id="menu_ecommerce">
+							<li class=""><a href="products.html?lang=en"><span>Products</span></a></li>
+							<li class=""><a href="product_edit.html?lang=en"><span>Add product</span></a></li>
+						</ul>
+					</li>
+					<li class="glyphicons sort"><a href="pages.html?lang=en"><span>Site Pages</span></a></li>
+					<li class="glyphicons picture"><a href="gallery.html?lang=en"><span>Photo Gallery</span></a></li>
+					<li class="glyphicons address_book"><a href="bookings.html?lang=en"><span>Bookings</span></a></li>
+				</ul>-->
+			</div>
+			
+			</div>
+			<!-- // Nice Scroll Wrapper END -->
+			
+		</div>
+		
+
+
+		<div id="content" 	>
+		<ul class="breadcrumb">
+	<li><a href="index.html?lang=en" class="glyphicons home"><i></i> Gamers city</a></li>
+	<li class="divider"></li>
+	<li>Mon compte</li>
+	<li class="divider"></li>
+	<li>Edition</li>
+</ul>
+<div class="separator bottom"></div>
+
+<h3 class="glyphicons user"><i></i>Editon</h3>
+<div class="innerLR">
+
+	<!-- Widget -->
+	<div class="widget widget-2 widget-tabs widget-tabs-2 border-bottom-none">
+	
+		<!-- Widget heading -->
+		<div class="widget-head border-bottom">
+			<ul>
+				<li class="active"><a class="glyphicons display" href="#overview" data-toggle="tab"><i></i>Information</a></li>
+				<li><a class="glyphicons edit" href="#edit-account" data-toggle="tab"><i></i>Edition</a></li>
+				<li><a class="glyphicons send" href="#projects" data-toggle="tab"><i></i>Upload</a></li>
+			</ul>
+		</div>
+		<!-- // Widget heading END -->
+		
+		<div class="widget-body innerT innerLR-none">
+		
+			<form class="form-horizontal margin-none">
+				<div class="tab-content padding-none">
+				
+					<div class="tab-pane active widget-body-regular" id="overview">
+					
+						<div class="row">
+							<div class="col-md-3 center">
+							
+								<!-- Profile Photo 
+								<a href="" ><img data-src="holder.js/200x150/dark" alt="Profile" class="img-thumbnail"/></a>
+								<div class="separator bottom"></div>
+								<!-- // Profile Photo END -->
+								
+								<!-- Social Icons -->
+								<a href="" class="social standard primary facebook"><i></i></a>
+								<a href="" class="social standard twitter"><i></i></a>
+								<a href="" class="social standard linked_in"><i></i></a>
+								<div class="clearfix separator bottom"></div>
+								<!-- // Social Icons END -->
+								
+								<!-- Twitter Section -->
+								<h5 class="social single twitter">Dernier tweet</h5>
+								<section class="twitter-feed">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="tweet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nunc lorem, rutrum non porta. <span class="label label-inverse">01/11/2012</span></div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</section>
+								<!-- Twitter Section END -->
+									
+							</div>
+							<div class="col-md-9">
+							
+								<!-- About -->
+								<h4>Orion</h4>
+								<p>Onglets information contient les differents tchats que vous possedez et vos derniers tweets.</p>
+								<p>Onglets edition vous permets d'edité vos informations de streaming ( player existant, gestion des liens sociaux, presentation,gestion du player/tchat/source titre de live par default).</p>
+								<p>Onglets upload vous permets d'uploader sur youtube/dailymotion vos lives enregistre sur le services ( effacers apres 1 mois automatiquement !)</p>
+								<!-- // About END -->
+								
+								<div class="alert alert-warning">
+									<a class="close" data-dismiss="alert">&times;</a>
+									<p>Les informations ci-dessous sont pour la bonne gestion de votre espaces sur le site.</p>
+								</div>
+								
+								
+								<div class="row">
+									
+									
+									<div class="col-md-4">
+										<div class="widget widget-4">
+			
+											<!-- Widget Heading -->
+											<div class="widget-head">
+												<h4 class="heading">Twitch</h4>
+											</div>
+											<!-- // Widget Heading END -->
+											
+											<div class="widget-body" style="padding: 10px 0;">
+													<iframe  src="http://www.twitch.tv/gamers_city/chat?popout=" frameborder="0" scrolling="yes" height="500" width="100%"></iframe>
+											</div>
+										</div>
+										
+									</div>
+									
+									<div class="col-md-4">
+										<div class="widget widget-4">
+			
+											<!-- Widget Heading -->
+											<div class="widget-head">
+												<h4 class="heading">Hitbox</h4>
+											</div>
+											<!-- // Widget Heading END -->
+											
+											<div class="widget-body" style="padding: 10px 0;">
+												<iframe width="100%" height="500" src="http://www.hitbox.tv/embedchat/snipy44" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+										
+									</div>
+									
+										
+									<div class="col-md-4">
+										<div class="widget widget-4">
+			
+											<!-- Widget Heading -->
+											<div class="widget-head">
+												<h4 class="heading">Gamers City</h4>
+											</div>
+											<!-- // Widget Heading END -->
+											
+											<div class="widget-body" style="padding: 10px 0;">
+												<img src="tchat.png" width="100%" />
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					
+					</div>
+				
+					<!-- Tab content -->
+					<div class="tab-pane widget-body-regular" id="edit-account">
+					
+						<div class="widget widget-tabs widget-tabs-vertical row row-merge margin-none">
+	
+							<!-- Widget heading -->
+							<div class="widget-head col-md-3">
+								<ul>
+									<li class="active"><a class="glyphicons pencil" href="#account-details" data-toggle="tab"><i></i>Presentation</a></li>
+									<li><a class="glyphicons settings" href="#account-settings" data-toggle="tab"><i></i>Mot de passe</a></li>
+									<li><a class="glyphicons eye_open" href="#privacy-settings" data-toggle="tab"><i></i>Streaming</a></li>
+								</ul>
+							</div>
+							<!-- // Widget heading END -->
+							
+							<div class="widget-body col-md-9">
+							
+								<div class="tab-content">
+								<div class="tab-pane active" id="account-details">
+							
+								<!-- Row 
+								<div class="row">
+								
+									<!-- Column 
+									<div class="col-md-6">
+									
+										<label>First name</label>
+										<input type="text" value="John" class="col-md-10 form-control" />
+										<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="First name is mandatory"><i></i></span>
+										<div class="separator bottom"></div>
+										
+										<label>Last name</label>
+										<input type="text" value="Doe" class="col-md-10 form-control" />
+										<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="Last name is mandatory"><i></i></span>
+										<div class="separator bottom"></div>
+										
+										<label>Date of birth</label>
+										<div class="input-group">
+											<input type="text" id="datepicker" class="col-md-12 form-control" value="13/06/1988" />
+											<span class="input-group-addon"><span class="glyphicons calendar"></span></span>
+										</div>
+										
+									</div>
+									<!-- // Column END
+									
+									<!-- Column 
+									<div class="col-md-6">
+									
+										<label>Gender</label>
+										<select class="col-md-12 form-control">
+											<option>Male</option>
+											<option>Female</option>
+										</select>
+										<div class="separator bottom"></div>
+										
+										<label>Age</label>
+										<input type="text" value="25" class="input-mini form-control" />
+										
+									</div>
+									<!-- // Column END 
+									
+								</div>
+								<!-- // Row END 
+								
+								<div class="separator"></div>-->
+								
+								
+								<label>Presentation</label>
+								<textarea id="mustHaveId" class="wysihtml5 col-md-12" rows="5">Webdevelloper du site.</textarea>
+								<div class="separator bottom"></div>
+								
+								
+								<button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok">Sauvegarder</button>
+								<button type="button" class="btn btn-icon btn-default glyphicons circle_remove">Annuler</button>
+								
+								</div>
+								<div class="tab-pane" id="account-settings">
+								
+									<!-- Row -->
+									<div class="row">
+									
+										<!-- Column -->
+										<div class="col-md-3">
+											<strong>Changement de mot de passe</strong>
+											<!--<p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+										</div>
+										<!-- // Column END -->
+										
+										<!-- Column -->
+										<div class="col-md-9">
+											<label for="inputUsername">Pseudo</label>
+											<input type="text" id="inputUsername" class="col-md-10 form-control" value="Orion" disabled="disabled" />
+											<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="Username can't be changed"></span>
+											<div class="separator"></div>
+													
+											<label for="inputPasswordOld">Ancien mot de passe</label>
+											<input type="password" id="inputPasswordOld" class="col-md-10 form-control" value="" placeholder="Leave empty for no change" />
+											<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="Leave empty if you don't wish to change the password"></span>
+											<div class="separator"></div>
+											
+											<label for="inputPasswordNew">Nouveaux mot de passe</label>
+											<input type="password" id="inputPasswordNew" class="col-md-12 form-control" value="" placeholder="Leave empty for no change" />
+											<div class="separator"></div>
+											
+											<label for="inputPasswordNew2">Repeter nouvaux mot de passe</label>
+											<input type="password" id="inputPasswordNew2" class="col-md-12 form-control" value="" placeholder="Leave empty for no change" />
+											<div class="separator"></div>
+										</div>
+										<!-- // Column END -->
+										
+									</div>
+									<!-- // Row END -->
+									
+									<div class="separator line bottom"></div>
+									
+
+									
+									<div class="right">
+										<button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok"><i></i>Enregistre</button>
+									</div>
+								</div>
+								<div class="tab-pane" id="privacy-settings">
+									<!-- Row -->
+									<div class="row">
+									
+										<!-- Column -->
+										<div class="col-md-3">
+											<strong>Information streaming</strong>
+											<p class="muted">Information sur les streams.</p>
+										</div>
+										<!-- // Column END -->
+										
+										<!-- Column -->
+										<div class="col-md-9">
+											
+											<label for="inputPhone">Twitch</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicons link"></span></span>
+												<input type="text" id="inputtwitch" name="twitch" class="form-control" placeholder="" />
+												<div class="make-switch" data-on="default" data-off="default"><input type="checkbox" checked></div>
+											</div>
+											<div class="separator"></div>
+														
+											<label for="inputEmail">Hitbox</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicons link"></span></span>
+												<input type="text" id="inputhitbox" name="hitbox" class="form-control" placeholder="" />
+												<div class="make-switch" data-on="default" data-off="default"><input type="checkbox" checked></div>
+											</div>
+											<div class="separator"></div>
+														
+											<label for="inputWebsite">Gamelife</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicons link"></span></span>
+												<input type="text" id="inputgamelife" name="gamelife" class="form-control" placeholder="" />
+												<div class="make-switch" data-on="default" data-off="default"><input type="checkbox" checked></div>
+											</div>
+											<div class="separator"></div>
+											
+											<label for="inputWebsite">Dailymotion</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicons link"></span></span>
+												<input type="text" id="inputdaily" name="daily" class="form-control" placeholder="" />
+												<div class="make-switch" data-on="default" data-off="default"><input type="checkbox" checked></div>
+											</div>
+											
+											
+											<div class="separator line bottom"></div>
+									</div>
+								</div><br /><br />
+								<div class="row">
+										<!-- Column -->
+										<div class="col-md-3">
+											<strong>Information social</strong>
+											<p class="muted">Information sur les liens social.</p>
+										</div>
+										<!-- // Column END -->
+										
+										<!-- Column -->
+										<div class="col-md-9">								
+											<label for="inputFacebook">Facebook</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social facebook"></span></span>
+												<input type="text" id="inputFacebook" name="facebook" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>
+													
+											<label for="inputTwitter">Twitter</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social twitter"></span></span>
+												<input type="text" id="inputTwitter" name="twitter" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>
+													
+											<label for="inputTwitter">youtube</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social youtube"></span></span>
+												<input type="text" id="inputyoutube"  name="youtube" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>
+											
+											<label for="inputTwitter">google</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social google_plus"></span></span>
+												<input type="text" id="inputgoogleplus"  name="google" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>										
+										</div>
+										<!-- // Column END -->
+
+									<!-- // Row END -->
+								</div>
+<br /><br />
+								<div class="row">
+										<!-- Column -->
+										<div class="col-md-3">
+											<strong>Services par default</strong>
+											<p class="muted">Services utiliser par default pour le tchat/player/Titre de live.</p>
+										</div>
+										<!-- // Column END -->
+										
+										<!-- Column -->
+										<div class="col-md-9">								
+											<label for="inputnotes">Tchat</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social notes"></span></span>
+												<input type="text" id="inputFacebook" name="facebook" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>
+													
+											<label for="input">Player</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social film"></span></span>
+												<input type="text" id="inputTwitter" name="twitter" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>
+													
+											<label for="inputTwitter">Titre du live</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="social pencil"></span></span>
+												<input type="text" id="inputyoutube"  name="youtube" class="form-control" placeholder="" />
+											</div>
+											<div class="separator"></div>
+																			
+										</div>
+										<!-- // Column END -->
+
+									<!-- // Row END -->
+								</div>
+																	<div class="separator line bottom"></div>
+									
+
+									
+									<div class="right">
+										<button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok"><i></i>Enregistre</button>
+									</div>										
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						
+					</div>
+					<!-- // Tab content END -->
+					<!-- Tab content -->
+					<div class="tab-pane widget-body-regular" id="projects">
+					
+	<div class="widget widget-gray widget-body-white">
+		<div class="widget-head">
+			<h4 class="heading">Upload youtube</h4>
+		</div>
+		<div class="widget-body">
+			<div class="row">
+				<div class="col-md-6">
+					<h4 class="separator bottom">Image Miniature Youtube</h4>
+					<div class="fileupload fileupload-new margin-none" data-provides="fileupload">
+					  	<div class="input-group">
+					    	<div class="form-control col-md-3"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div>
+					    	<span class="input-group-btn">
+					    		<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" class="margin-none"></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+					    	</span>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h4 class="separator bottom">Choix fichier live</h4>
+						<div class="input-group">
+							<input type="text" class="form-control">
+							<div class="input-group-btn">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Fichier <span class="caret"></span></button>
+							  <ul class="dropdown-menu pull-right" role="menu">
+								<li><a href="#">live-07042015</a></li>
+								<li><a href="#">live-06042015</a></li>
+							  </ul>
+							</div><!-- /btn-group -->
+						</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="widget widget-gray widget-body-white">
+		<div class="widget-head">
+			<h4 class="heading">Upload dailymotion</h4>
+		</div>
+		<div class="widget-body">
+			<div class="row">
+				<div class="col-md-6">
+					<h4 class="separator bottom">Image Miniature Dailymotion</h4>
+					<div class="fileupload fileupload-new margin-none" data-provides="fileupload">
+					  	<div class="input-group">
+					    	<div class="form-control col-md-3"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div>
+					    	<span class="input-group-btn">
+					    		<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" class="margin-none"></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+					    	</span>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h4 class="separator bottom">Choix fichier live</h4>
+						<div class="input-group">
+							<input type="text" class="form-control">
+							<div class="input-group-btn">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Fichier <span class="caret"></span></button>
+							  <ul class="dropdown-menu pull-right" role="menu">
+								<li><a href="#">live-07042015</a></li>
+								<li><a href="#">live-06042015</a></li>
+							  </ul>
+							</div><!-- /btn-group -->
+						</div>	
+				</div>
+			</div>
+		</div>
+	</div>						
+					</div>
+					<!-- // Tab content END -->					
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- // Widget END -->
+	
+</div>		
+				<!-- End Content -->
+		</div>
+		
+				<!-- End Wrapper -->
+		</div>
+		
+		<!-- Sticky Footer -->
+		<div id="footer" class="visible-desktop hidden-print">
+	      	<div class="wrap">
+	      		<ul>
+	      			<li class="dropdown dropup">
+	      				<span data-toggle="dropdown" class="dropdown-toggle glyphicons settings text" title=""><i></i><span class="hidden-phone">Menu Options</span></span>
+	      				<ul class="dropdown-menu pull-left">
+	      					<li class="active"><a href="#" data-toggle="menuPosition" data-menuPosition="left-menu" title="">Menu a gauche</a></li>
+	      					<li><a href="#" data-toggle="menuPosition" data-menuPosition="right-menu" title="">Menu a droite</a></li>
+	      				</ul>
+	      			</li>
+	      		</ul>
+	      	</div>
+	    </div>
+	    				
+	</div>
+	
+	<div id="themer" class="collapse">
+		<div class="wrapper">
+			<span class="close2">&times; Fermer</span>
+			<h4>Theme <span>Options des couleurs</span></h4>
+			<ul>
+				<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+				<li>Couleur primaire: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+				<li>
+					<span class="link" id="themer-custom-reset">reset</span>
+					<span class="pull-right"><label>Avancée <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+				</li>
+			</ul>
+			<div id="themer-getcode" class="hide">
+				<hr class="separator" />
+				<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+				<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JQueryUI v1.9.2 -->
+	<script src="../common/theme/scripts/plugins/system/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="../common/theme/scripts/plugins/system/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- MiniColors -->
+	<script src="../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- Select2 -->
+	<script src="../common/theme/scripts/plugins/forms/select2/select2.js"></script>
+	
+	<!-- jQuery Slim Scroll Plugin -->
+	<script src="../common/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- Common Demo Script -->
+	<script src="../common/theme/scripts/demo/common.js?1382104445"></script>
+	
+	<!-- Holder Plugin -->
+	<script src="../common/theme/scripts/plugins/other/holder/holder.js"></script>
+	<script>Holder.add_theme("dark", {background:"#000", foreground:"#aaa", size:9})</script>
+	
+	<!-- Twitter Feed -->
+	<script src="../common/theme/scripts/demo/twitter.js"></script>
+	
+	<!-- Colors -->
+	<script>
+	var primaryColor = '#4a8bc2',
+		dangerColor = '#b55151',
+		successColor = '#609450',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	</script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = '#DA4C4C';
+	</script>
+	<script src="../common/theme/scripts/plugins/system/jquery.cookie.js"></script>
+	<script src="../common/theme/scripts/demo/themer.js"></script>
+	
+	<!-- Global -->
+	<script>
+	var basePath = '',
+		commonPath = '../common/',
+	</script>
+	
+	
+	<!-- Resize Script -->
+	<script src="../common/theme/scripts/plugins/other/jquery.ba-resize.js"></script>
+	
+	<!-- Uniform -->
+	<script src="../common/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+	
+	<!-- Bootstrap Script -->
+	<script src="../common/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="../common/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<!-- <script src="../common/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script> -->
+	<script src="../common/bootstrap/extend/bootstrap-switch/static/js/bootstrap-switch.min.js"></script>
+	<script src="../common/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="../common/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootbox.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js" type="text/javascript"></script>
+	<script src="../common/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js" type="text/javascript"></script>
+	
+	<!-- Layout Options DEMO Script -->
+	<script src="../common/theme/scripts/demo/layout.js"></script>
+	
+	<!-- google-code-prettify -->
+	<script src="../common/theme/scripts/plugins/other/google-code-prettify/prettify.js"></script>
+	
+	<!-- Gritter Notifications Plugin -->
+	<script src="../common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js"></script>
+	
+	<!-- Notyfy -->
+	<script type="text/javascript" src="../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,400 @@
+/*--------------------------------------------------------------
+2.0 Document Setup
+--------------------------------------------------------------*/
+/*------------------------------
+	2.1 Typography
+------------------------------*/
+
+html, body {
+    font-size: 13.5px;
+}
+
+body, button, input, select, textarea {
+    font-family: $opensans;
+    line-height: 1.8;
+    color: $text;
+}
+
+body {
+	background: url('assets/images/bg.jpg') no-repeat top center fixed #000000;
+}
+
+pre,
+code,
+input,
+textarea {
+	font: inherit;
+}
+
+::-moz-selection { 
+	background: #000000;
+	color: $white;
+}
+	
+::selection {
+	background: #000000;
+	color: $white;
+}
+
+/*------------------------------
+	2.2 Links
+------------------------------*/
+a {
+	color: $primary;
+	text-decoration: none;
+	transition: opacity 0.25s ease 0s, background-color 0.25s ease 0s, color 0.25s ease 0s, background 0.25s ease 0s, box-shadow 0.25s ease 0s;
+	&:hover{
+		color: $secondary;
+	}
+}
+
+/*------------------------------
+	2.3 Heading
+------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: $heading;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0 0 $base/2;
+	@extend .break;
+	& a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	line-height: 1.15;
+	font-size: 25px;
+	
+	@include for(medium-screens) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	@include for(medium-screens) {
+		font-size: 20px;
+	}
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+h5 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+h6 {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+}
+
+/*------------------------------
+	2.4 Base
+------------------------------*/
+ul,ol,dl,p,details,address,.vcard,figure,pre,fieldset,table,dt,dd,hr {
+	margin-bottom: $base;
+}
+p,ul,ol,dl,blockquote {
+	@extend .break;
+}
+
+/*------------------------------
+	2.5 Content
+------------------------------*/
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+blockquote {
+	clear: both;
+	@include rem('margin', $base 0);
+	p {
+		line-height: 1.5;
+		font-size: 24px;
+	}
+	cite {
+		font-style: normal;
+		font-size: 13px;
+		margin-bottom: $base;
+	}
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+figure {
+	margin: 0;
+}
+
+address {
+	margin: $base 0;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid $border;
+	height: 1px;
+	margin-bottom: $base;
+}
+
+tt,
+kbd,
+pre,
+code,
+samp,
+var {
+	font-family: $monaco;
+	background-color: $border;
+	padding: 5px 7px;
+	@include border-radius;
+}
+
+pre {
+	overflow: auto;
+	white-space: pre-wrap;
+	max-width: 100%;
+	line-height: 1.7;
+	margin: $base 0;
+	padding: $base;
+	@extend .break;
+}
+
+details {
+	summary {
+		font-weight: bold;
+		margin-bottom: $base;
+	}
+	:focus {
+		outline: none;
+	}
+}
+
+abbr,
+acronym,
+dfn {
+	cursor: help;
+	font-size: .95em;
+	text-transform: uppercase;
+	border-bottom: 1px dotted $border;
+	letter-spacing: 1px;
+}
+
+mark {
+	background-color: #fff9c0;
+	text-decoration: none;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+ul, ol {
+	padding-left: 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul li, ol li {
+	margin: $base/2.5 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $base $base;
+}
+
+iframe,embed {
+	max-width:100%;
+}
+
+/*------------------------------
+	2.6 Table
+------------------------------*/
+table {
+	width: 100%;
+	margin-bottom: $base;
+	border: 1px solid $border;;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table > thead > tr > th, 
+table > tbody > tr > th, 
+table > tfoot > tr > th, 
+table > thead > tr > td, 
+table > tbody > tr > td, 
+table > tfoot > tr > td {
+    border: 1px solid $border;
+    line-height: 1.42857;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table > thead > tr > th, table > thead > tr > td {
+    border-bottom-width: 2px;
+    font-weight: bold;
+}
+
+/*------------------------------
+	2.7 Form
+------------------------------*/
+fieldset{
+	padding: $base;
+	border: 1px solid $border;
+}
+
+input[type="reset"],input[type="submit"],input[type="submit"] {
+	cursor: pointer;
+	border: none;
+	padding: $base/2 $base;
+	@include border-radius();
+	background: $primary;
+	color: $white;
+	&:hover {
+		background: $secondary;
+	}
+}
+
+input[type="button"]:hover, input[type="button"]:focus,input[type="reset"]:hover,
+input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:focus,
+button:hover,button:focus {
+	cursor:pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+select {
+	max-width: 100%;
+	overflow: auto;
+	vertical-align: top;
+	outline: none;
+	border: 1px solid $border;
+	padding: $base/2;
+}
+
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	max-width: 100%;
+	background: transparent;
+	border: 1px solid #333333;
+	-webkit-appearance: none;
+	padding: 8px 12px;
+	@include border-radius( 2px );
+	&:focus {
+		outline: none;
+	}
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type="radio"],input[type="checkbox"] {
+	margin: $base/2;
+}
+
+input, textarea,input[type="submit"]:focus{
+	outline: 0 none;
+}
+
+/*------------------------------
+	2.8 Accessibility
+------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: $meta;
+	@include border-radius( 3px );
+	clip: auto !important;
+	color: $primary;
+	display: block;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 1.7em;
+	padding: 17px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*------------------------------
+	2.9 Helper
+------------------------------*/
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+
+
+
+
