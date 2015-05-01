@@ -7,7 +7,7 @@ function db_connect() {
 		$host = 	'localhost';
 		$dbname = 	'gamercity';
 		$user = 	'gamercity';
-		$password = 	'h1i138';
+		$password = 	'xxxxx';
 		$pdo_options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 );
